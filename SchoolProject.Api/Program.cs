@@ -1,4 +1,5 @@
 using Microsoft.EntityFrameworkCore;
+using SchoolProject.Core;
 using SchoolProject.Infrustructure;
 using SchoolProject.Infrustructure.Abstracts;
 using SchoolProject.Infrustructure.Data;
@@ -23,7 +24,8 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 
 builder.Services
     .AddInfrustructureDependencies()
-    .AddServicesDependencies();
+    .AddServicesDependencies()
+    .AddCoreDependencies();
 
 #endregion DependenciesInjection
 

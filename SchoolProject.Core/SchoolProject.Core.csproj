@@ -17,8 +17,12 @@
     <Folder Include="Feature\Students\Commands\Models\" />
     <Folder Include="Feature\Students\Commands\" />
     <Folder Include="Feature\Students\Commands\Validation\" />
-    <Folder Include="Feature\Students\Queries\Models\" />
-    <Folder Include="Mapping\" />
+    <Folder Include="Mapping\StudentMapper\CommandMapping\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
+    <PackageReference Include="MediatR" Version="12.1.1" />
   </ItemGroup>
 
 </Project>

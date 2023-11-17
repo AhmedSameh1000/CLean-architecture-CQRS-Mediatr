@@ -5,7 +5,7 @@ using SchoolProject.Infrustructure.Data;
 
 namespace SchoolProject.Infrustructure.Repositories
 {
-    public class StudentRepository : IStudentRepository
+    public class StudentRepository : GenericRepository<Student>, IStudentRepository
     {
         #region Fiels
 
@@ -15,7 +15,7 @@ namespace SchoolProject.Infrustructure.Repositories
 
         #region Constructor
 
-        public StudentRepository(AppDbContext DbContext)
+        public StudentRepository(AppDbContext DbContext) : base(DbContext)
         {
             _dbContext = DbContext;
         }
@@ -26,7 +26,10 @@ namespace SchoolProject.Infrustructure.Repositories
 
         public async Task<List<Student>> GetStudentsAsync()
         {
-            return await _dbContext.Students.ToListAsync();
+            return await _dbContext.Students
+                .AsNoTracking()
+                .Include(c => c.Department)
+                .ToListAsync();
         }
 
         #endregion HandelsFuction

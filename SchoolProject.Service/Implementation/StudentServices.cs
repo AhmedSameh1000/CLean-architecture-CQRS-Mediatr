@@ -8,15 +8,15 @@ namespace SchoolProject.Service.Implementation
     {
         #region Fields
 
-        private readonly IStudentRepository _studentRepository;
+        private readonly IUnitOfWork _unitOfWork;
 
         #endregion Fields
 
         #region Constructor
 
-        public StudentServices(IStudentRepository studentRepository)
+        public StudentServices(IUnitOfWork unitOfWork)
         {
-            _studentRepository = studentRepository;
+            _unitOfWork = unitOfWork;
         }
 
         #endregion Constructor
@@ -25,9 +25,9 @@ namespace SchoolProject.Service.Implementation
 
         public async Task<List<Student>> GetStudentsAsync()
         {
-            var Student = await _studentRepository.GetStudentsAsync();
+            var Student = await _unitOfWork.Student.GetAllAsNoTracking(new[] { "Department" });
 
-            return Student;
+            return Student.ToList();
         }
 
         #endregion HandleFunction

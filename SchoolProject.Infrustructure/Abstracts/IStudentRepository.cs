@@ -2,8 +2,7 @@
 
 namespace SchoolProject.Infrustructure.Abstracts
 {
-    public interface IStudentRepository
+    public interface IStudentRepository : IGenericRepository<Student>
     {
-        public Task<List<Student>> GetStudentsAsync();
     }
 }
