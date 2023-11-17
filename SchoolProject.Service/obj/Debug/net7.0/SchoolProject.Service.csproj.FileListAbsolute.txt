@@ -1,0 +1,17 @@
+C:\Users\Administrator\Desktop\Clean Architecture\SchoolProject\SchoolProject.Service\bin\Debug\net7.0\SchoolProject.Service.deps.json
+C:\Users\Administrator\Desktop\Clean Architecture\SchoolProject\SchoolProject.Service\bin\Debug\net7.0\SchoolProject.Service.dll
+C:\Users\Administrator\Desktop\Clean Architecture\SchoolProject\SchoolProject.Service\bin\Debug\net7.0\SchoolProject.Service.pdb
+C:\Users\Administrator\Desktop\Clean Architecture\SchoolProject\SchoolProject.Service\bin\Debug\net7.0\SchoolProject.Data.dll
+C:\Users\Administrator\Desktop\Clean Architecture\SchoolProject\SchoolProject.Service\bin\Debug\net7.0\SchoolProject.Infrustructure.dll
+C:\Users\Administrator\Desktop\Clean Architecture\SchoolProject\SchoolProject.Service\bin\Debug\net7.0\SchoolProject.Data.pdb
+C:\Users\Administrator\Desktop\Clean Architecture\SchoolProject\SchoolProject.Service\bin\Debug\net7.0\SchoolProject.Infrustructure.pdb
+C:\Users\Administrator\Desktop\Clean Architecture\SchoolProject\SchoolProject.Service\obj\Debug\net7.0\SchoolProject.Service.csproj.AssemblyReference.cache
+C:\Users\Administrator\Desktop\Clean Architecture\SchoolProject\SchoolProject.Service\obj\Debug\net7.0\SchoolProject.Service.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Administrator\Desktop\Clean Architecture\SchoolProject\SchoolProject.Service\obj\Debug\net7.0\SchoolProject.Service.AssemblyInfoInputs.cache
+C:\Users\Administrator\Desktop\Clean Architecture\SchoolProject\SchoolProject.Service\obj\Debug\net7.0\SchoolProject.Service.AssemblyInfo.cs
+C:\Users\Administrator\Desktop\Clean Architecture\SchoolProject\SchoolProject.Service\obj\Debug\net7.0\SchoolProject.Service.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\Clean Architecture\SchoolProject\SchoolProject.Service\obj\Debug\net7.0\SchoolProject.Service.csproj.CopyComplete
+C:\Users\Administrator\Desktop\Clean Architecture\SchoolProject\SchoolProject.Service\obj\Debug\net7.0\SchoolProject.Service.dll
+C:\Users\Administrator\Desktop\Clean Architecture\SchoolProject\SchoolProject.Service\obj\Debug\net7.0\refint\SchoolProject.Service.dll
+C:\Users\Administrator\Desktop\Clean Architecture\SchoolProject\SchoolProject.Service\obj\Debug\net7.0\SchoolProject.Service.pdb
+C:\Users\Administrator\Desktop\Clean Architecture\SchoolProject\SchoolProject.Service\obj\Debug\net7.0\ref\SchoolProject.Service.dll

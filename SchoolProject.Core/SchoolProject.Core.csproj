@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SchoolProject.Data\SchoolProject.Data.csproj" />
+    <ProjectReference Include="..\SchoolProject.Infrustructure\SchoolProject.Infrustructure.csproj" />
+    <ProjectReference Include="..\SchoolProject.Service\SchoolProject.Service.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Feature\Students\Commands\Handler\" />
+    <Folder Include="Feature\Students\Commands\Models\" />
+    <Folder Include="Feature\Students\Commands\" />
+    <Folder Include="Feature\Students\Commands\Validation\" />
+    <Folder Include="Feature\Students\Queries\Models\" />
+    <Folder Include="Mapping\" />
+  </ItemGroup>
+
+</Project>
