@@ -30,6 +30,12 @@ namespace SchoolProject.Service.Implementation
             return Student.ToList();
         }
 
+        public async Task<Student> GetStudentByIdAsync(int id)
+        {
+            var Student = await _unitOfWork.Student.GetFirstOrDefault(c => c.StudentId == id, new[] { "Department" });
+            return Student;
+        }
+
         #endregion HandleFunction
     }
 }

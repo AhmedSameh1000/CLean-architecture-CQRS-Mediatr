@@ -21,17 +21,5 @@ namespace SchoolProject.Infrustructure.Repositories
         }
 
         #endregion Constructor
-
-        #region HandelsFuction
-
-        public async Task<List<Student>> GetStudentsAsync()
-        {
-            return await _dbContext.Students
-                .AsNoTracking()
-                .Include(c => c.Department)
-                .ToListAsync();
-        }
-
-        #endregion HandelsFuction
     }
 }

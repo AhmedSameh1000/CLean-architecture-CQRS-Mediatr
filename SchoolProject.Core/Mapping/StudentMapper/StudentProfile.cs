@@ -6,7 +6,7 @@ namespace SchoolProject.Core.Mapping.StudentMapper
     {
         public StudentProfile()
         {
-            GetStudentListMapping();
+            GetStudentMapping();
         }
     }
 }
