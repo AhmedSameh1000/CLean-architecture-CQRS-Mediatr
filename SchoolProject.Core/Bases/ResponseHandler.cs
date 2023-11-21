@@ -23,7 +23,7 @@
                 Data = entity,
                 StatusCode = System.Net.HttpStatusCode.OK,
                 Succeeded = true,
-                Message = "Get Successfully",
+                Message = "Successfully",
                 Meta = Meta
             };
         }
@@ -44,7 +44,8 @@
             {
                 StatusCode = System.Net.HttpStatusCode.BadRequest,
                 Succeeded = false,
-                Message = Message == null ? "Bad Request" : Message
+                Message = Message == null ? "Bad Request" : Message,
+                Errors = Message.Split(',').ToList()
             };
         }
 

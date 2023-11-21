@@ -71,5 +71,28 @@ namespace SchoolProject.Infrustructure.Repositories
 
             return await Query.ToListAsync();
         }
+
+        public async Task<bool> SaveChanges()
+        {
+            var RowsEfected = await _dbContext.SaveChangesAsync();
+            return RowsEfected > 0 ? true : false;
+        }
+
+        public async Task<bool> IsExist(int id)
+        {
+            var StudnetResult = await _dbContext.Set<T>().FindAsync(id);
+
+            return StudnetResult is null ? false : true;
+        }
+
+        public void UpdateAsync(T entity)
+        {
+            _dbContext.Set<T>().Update(entity);
+        }
+
+        public void ClearChangeTracking()
+        {
+            _dbContext.ChangeTracker.Clear();
+        }
     }
 }

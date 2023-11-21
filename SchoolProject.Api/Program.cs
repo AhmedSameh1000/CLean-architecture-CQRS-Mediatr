@@ -1,9 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using SchoolProject.Core;
 using SchoolProject.Infrustructure;
-using SchoolProject.Infrustructure.Abstracts;
 using SchoolProject.Infrustructure.Data;
-using SchoolProject.Infrustructure.Repositories;
 using SchoolProject.Service;
 
 var builder = WebApplication.CreateBuilder(args);

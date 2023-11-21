@@ -8,8 +8,9 @@ namespace SchoolProject.Infrustructure
     {
         public static IServiceCollection AddInfrustructureDependencies(this IServiceCollection services)
         {
-            services.AddTransient<IStudentRepository, StudentRepository>();
-            services.AddTransient<IUnitOfWork, UnitOfWork>();
+            services.AddScoped<IStudentRepository, StudentRepository>();
+            services.AddScoped<IDepartmentRepository, DepartmentRepository>();
+            services.AddScoped<IUnitOfWork, UnitOfWork>();
             return services;
         }
     }

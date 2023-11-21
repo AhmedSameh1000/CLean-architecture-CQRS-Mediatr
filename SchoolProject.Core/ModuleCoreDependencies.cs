@@ -1,6 +1,5 @@
-﻿using Microsoft.Extensions.DependencyInjection;
-using SchoolProject.Infrustructure.Abstracts;
-using SchoolProject.Infrustructure.Repositories;
+﻿using FluentValidation;
+using Microsoft.Extensions.DependencyInjection;
 using System.Reflection;
 
 namespace SchoolProject.Core
@@ -12,6 +11,10 @@ namespace SchoolProject.Core
             services.AddAutoMapper(Assembly.GetExecutingAssembly());
 
             services.AddMediatR(md => md.RegisterServicesFromAssemblies(Assembly.GetExecutingAssembly()));
+
+            services.AddValidatorsFromAssembly(Assembly.GetExecutingAssembly());
+            //
+
             return services;
         }
     }

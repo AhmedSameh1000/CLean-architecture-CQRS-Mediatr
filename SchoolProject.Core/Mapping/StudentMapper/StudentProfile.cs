@@ -6,7 +6,8 @@ namespace SchoolProject.Core.Mapping.StudentMapper
     {
         public StudentProfile()
         {
-            GetStudentMapping();
+            GetStudentQueryMapping();
+            GetStudentCommandMapping();
         }
     }
 }

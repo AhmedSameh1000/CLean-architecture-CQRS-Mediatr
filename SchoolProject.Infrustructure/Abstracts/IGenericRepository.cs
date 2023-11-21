@@ -12,8 +12,16 @@ namespace SchoolProject.Infrustructure.Abstracts
 
         Task Add(T entity);
 
+        void UpdateAsync(T entity);
+
         void Remove(T Entity);
 
         void RemoveRange(IEnumerable<T> Entities);
+
+        Task<bool> IsExist(int id);
+
+        Task<bool> SaveChanges();
+
+        void ClearChangeTracking();
     }
 }

@@ -11,10 +11,13 @@ namespace SchoolProject.Infrustructure.Repositories
         private IDbContextTransaction _transaction;
         public IStudentRepository Student { get; private set; }
 
+        public IDepartmentRepository Department { get; private set; }
+
         public UnitOfWork(AppDbContext dbContext)
         {
             _dbContext = dbContext;
             Student = new StudentRepository(dbContext);
+            Department = new DepartmentRepository(dbContext);
         }
 
         public async Task BeginTransaction()

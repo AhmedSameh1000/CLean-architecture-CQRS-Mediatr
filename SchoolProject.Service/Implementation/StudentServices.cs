@@ -8,15 +8,15 @@ namespace SchoolProject.Service.Implementation
     {
         #region Fields
 
-        private readonly IUnitOfWork _unitOfWork;
+        private readonly IStudentRepository _studentRepository;
 
         #endregion Fields
 
         #region Constructor
 
-        public StudentServices(IUnitOfWork unitOfWork)
+        public StudentServices(IStudentRepository studentRepository)
         {
-            _unitOfWork = unitOfWork;
+            _studentRepository = studentRepository;
         }
 
         #endregion Constructor
@@ -25,15 +25,43 @@ namespace SchoolProject.Service.Implementation
 
         public async Task<List<Student>> GetStudentsAsync()
         {
-            var Student = await _unitOfWork.Student.GetAllAsNoTracking(new[] { "Department" });
+            var Student = await _studentRepository.GetAllAsTracking(new[] { "Department" });
 
             return Student.ToList();
         }
 
         public async Task<Student> GetStudentByIdAsync(int id)
         {
-            var Student = await _unitOfWork.Student.GetFirstOrDefault(c => c.StudentId == id, new[] { "Department" });
-            return Student;
+            return await _studentRepository.GetFirstOrDefault(c => c.StudentId == id, new[] { "Department" });
+        }
+
+        public async Task<Student> AddAsync(Student student)
+        {
+            _studentRepository.ClearChangeTracking();
+            await _studentRepository.Add(student);
+            await _studentRepository.SaveChanges();
+
+            return student;
+        }
+
+        public Task<bool> IsExist(int id)
+        {
+            return _studentRepository.IsExist(id);
+        }
+
+        public async Task<Student> UpdateAsync(Student student)
+        {
+            _studentRepository.ClearChangeTracking();
+            _studentRepository.UpdateAsync(student);
+            await _studentRepository.SaveChanges();
+            return student;
+        }
+
+        public async Task<bool> DeleteAsync(Student student)
+        {
+            _studentRepository.Remove(student);
+
+            return await _studentRepository.SaveChanges();
         }
 
         #endregion HandleFunction
