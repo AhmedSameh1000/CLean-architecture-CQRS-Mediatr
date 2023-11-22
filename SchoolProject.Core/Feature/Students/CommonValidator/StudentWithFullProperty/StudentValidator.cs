@@ -1,4 +1,6 @@
 ﻿using FluentValidation;
+using Microsoft.Extensions.Localization;
+using SchoolProject.Core.Resources;
 using SchoolProject.Service.Abstracts;
 
 namespace SchoolProject.Core.Feature.Students.CommonValidator.StudentWithFullProperty
@@ -6,13 +8,15 @@ namespace SchoolProject.Core.Feature.Students.CommonValidator.StudentWithFullPro
     public class StudentValidator : AbstractValidator<IStudentProperty>
     {
         private readonly IDepartmentService _departmentService;
+        private readonly IStringLocalizer<SharedResources> _stringLocalizer;
 
         #region Constractor
 
-        public StudentValidator(IDepartmentService departmentService)
+        public StudentValidator(IDepartmentService departmentService, IStringLocalizer<SharedResources> stringLocalizer)
         {
-            ApplyValidationRules();
             _departmentService = departmentService;
+            _stringLocalizer = stringLocalizer;
+            ApplyValidationRules();
         }
 
         #endregion Constractor
@@ -21,20 +25,25 @@ namespace SchoolProject.Core.Feature.Students.CommonValidator.StudentWithFullPro
 
         public void ApplyValidationRules()
         {
-            RuleFor(c => c.Name)
+            RuleFor(c => c.NameAr)
+                .NotEmpty().WithMessage(_stringLocalizer[SharedSesourcesKeys.Name] + " " + _stringLocalizer[SharedSesourcesKeys.NotEmpty])
+                .NotNull().WithMessage(_stringLocalizer[SharedSesourcesKeys.Name] + " " + _stringLocalizer[SharedSesourcesKeys.NotEmpty])
+                .MaximumLength(10).WithMessage(_stringLocalizer[SharedSesourcesKeys.Name] + " " + _stringLocalizer[SharedSesourcesKeys.LessThan10]);
 
-                .NotEmpty().WithMessage("Name Must Not Be Empty")
-                .NotNull().WithMessage("Name Must Not Be Null")
-                .MaximumLength(10).WithMessage("Name Must Not Be More than 10");
+            RuleFor(c => c.NameEn)
+                .NotEmpty().WithMessage(_stringLocalizer[SharedSesourcesKeys.Name] + " " + _stringLocalizer[SharedSesourcesKeys.NotEmpty])
+                .NotNull().WithMessage(_stringLocalizer[SharedSesourcesKeys.Name] + " " + _stringLocalizer[SharedSesourcesKeys.NotEmpty])
+                .MaximumLength(10).WithMessage(_stringLocalizer[SharedSesourcesKeys.Name] + " " + _stringLocalizer[SharedSesourcesKeys.LessThan10]);
+
             RuleFor(c => c.Address)
-                .NotEmpty().WithMessage("Address Must Not Be Empty")
-                .NotNull().WithMessage("Address Must Not Be Null")
-                .MaximumLength(10).WithMessage("{PropertyName} Must Not Be More than 10");
+                .NotEmpty().WithMessage(_stringLocalizer[SharedSesourcesKeys.Address] + " " + _stringLocalizer[SharedSesourcesKeys.NotEmpty])
+                .NotNull().WithMessage(_stringLocalizer[SharedSesourcesKeys.Address] + " " + _stringLocalizer[SharedSesourcesKeys.NotEmpty])
+                .MaximumLength(10).WithMessage(_stringLocalizer[SharedSesourcesKeys.Address] + " " + _stringLocalizer[SharedSesourcesKeys.LessThan10]);
 
             RuleFor(c => c.DepartmentId)
                 .MustAsync(async (Id, CancellationToken) =>
                    await _departmentService.IsExist(Id)
-                ).WithMessage("Department with this Id Not Found");
+                ).WithMessage(_stringLocalizer[SharedSesourcesKeys.Department] + " " + _stringLocalizer[SharedSesourcesKeys.NotFound]);
         }
 
         #endregion ActionsValidation

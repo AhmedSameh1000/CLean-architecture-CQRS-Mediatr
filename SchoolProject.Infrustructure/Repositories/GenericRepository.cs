@@ -1,7 +1,9 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using SchoolProject.Core.Wrappers;
 using SchoolProject.Infrustructure.Abstracts;
 using SchoolProject.Infrustructure.Data;
 using System.Linq.Expressions;
+using X.PagedList;
 
 namespace SchoolProject.Infrustructure.Repositories
 {
@@ -93,6 +95,25 @@ namespace SchoolProject.Infrustructure.Repositories
         public void ClearChangeTracking()
         {
             _dbContext.ChangeTracker.Clear();
+        }
+
+        public async Task<IPagedList<T>> GetAllAsTracking(RequestParams requestParams, string[] InclueProperties = null)
+        {
+            IQueryable<T> Query = _dbContext.Set<T>();
+            if (InclueProperties != null)
+            {
+                foreach (var includeProperty in InclueProperties)
+                {
+                    Query = Query.Include(includeProperty.Trim());
+                }
+            }
+
+            return await Query.ToPagedListAsync(requestParams.PageNumber, requestParams.PageSize);
+        }
+
+        public int Count()
+        {
+            return _dbContext.Set<T>().Count();
         }
     }
 }

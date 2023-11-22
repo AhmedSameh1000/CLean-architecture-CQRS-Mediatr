@@ -1,10 +1,12 @@
-﻿using SchoolProject.Data.Entities;
+﻿using SchoolProject.Core.Wrappers;
+using SchoolProject.Data.Entities;
+using X.PagedList;
 
 namespace SchoolProject.Service.Abstracts
 {
     public interface IStudentService
     {
-        Task<List<Student>> GetStudentsAsync();
+        Task<IPagedList<Student>> GetStudentsAsync(RequestParams requestParams);
 
         Task<Student> GetStudentByIdAsync(int id);
 
@@ -15,5 +17,7 @@ namespace SchoolProject.Service.Abstracts
         Task<bool> DeleteAsync(Student student);
 
         Task<bool> IsExist(int id);
+
+        int GetCount();
     }
 }

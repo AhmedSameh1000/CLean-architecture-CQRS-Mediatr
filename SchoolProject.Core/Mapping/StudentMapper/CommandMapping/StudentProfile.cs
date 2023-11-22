@@ -11,8 +11,8 @@ namespace SchoolProject.Core.Mapping.StudentMapper
              .ForMember(dest => dest.DepartmentId, Options => Options.MapFrom(src => src.DID)).ReverseMap();
 
             CreateMap<Student, UpdateStudentDTO>()
-             .ForMember(dest => dest.DepartmentId, Options => Options.MapFrom(src => src.DID)).ReverseMap()
-             .ForMember(dest => dest.StudentId, options => options.MapFrom(src => src.Id)).ReverseMap();
+             .ForMember(dest => dest.DepartmentId, Options => Options.MapFrom(src => src.DID))
+             .ForMember(dest => dest.Id, options => options.MapFrom(src => src.StudentId)).ReverseMap();
         }
     }
 }

@@ -1,8 +1,10 @@
 ﻿using AutoMapper;
 using MediatR;
+using Microsoft.Extensions.Localization;
 using SchoolProject.Core.Bases;
 using SchoolProject.Core.Feature.Students.Queries.Models;
 using SchoolProject.Core.Feature.Students.Queries.Results;
+using SchoolProject.Core.Resources;
 using SchoolProject.Service.Abstracts;
 
 namespace SchoolProject.Core.Feature.Students.Queries.Handler
@@ -15,6 +17,7 @@ namespace SchoolProject.Core.Feature.Students.Queries.Handler
 
         private readonly IStudentService _studentService;
         private readonly IMapper _mapper;
+        private readonly IStringLocalizer<SharedResources> _stringLocalizer;
 
         #endregion Fields
 
@@ -22,10 +25,12 @@ namespace SchoolProject.Core.Feature.Students.Queries.Handler
 
         public StudentQueryHandler(
             IStudentService studentService,
-            IMapper mapper)
+            IMapper mapper,
+            IStringLocalizer<SharedResources> stringLocalizer) : base(stringLocalizer)
         {
             _studentService = studentService;
             _mapper = mapper;
+            _stringLocalizer = stringLocalizer;
         }
 
         #endregion Constractor
@@ -34,10 +39,11 @@ namespace SchoolProject.Core.Feature.Students.Queries.Handler
 
         public async Task<Response<List<StudentToReturn>>> Handle(GetStudentListQuery request, CancellationToken cancellationToken)
         {
-            var StudentList = await _studentService.GetStudentsAsync();
+            var StudentList = await _studentService.GetStudentsAsync(request.RequestParams);
 
             var StudentListResponse = _mapper.Map<List<StudentToReturn>>(StudentList);
-            return Success(StudentListResponse);
+            var PageCount = _studentService.GetCount() / request.RequestParams.PageSize;
+            return Success(StudentListResponse, PageCount);
         }
 
         public async Task<Response<StudentToReturn>> Handle(GetStudentByIdQuery request, CancellationToken cancellationToken)
@@ -46,7 +52,7 @@ namespace SchoolProject.Core.Feature.Students.Queries.Handler
 
             if (Student is null)
             {
-                return NotFound<StudentToReturn>("Student Not Found");
+                return NotFound<StudentToReturn>(_stringLocalizer[SharedSesourcesKeys.NotFound]);//"Student Not Found"
             }
 
             var StudentResponse = _mapper.Map<StudentToReturn>(Student);

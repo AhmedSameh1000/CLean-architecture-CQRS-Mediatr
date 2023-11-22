@@ -23,7 +23,6 @@ C:\Users\Administrator\Desktop\Clean Architecture\SchoolProject\SchoolProject.Ap
 C:\Users\Administrator\Desktop\Clean Architecture\SchoolProject\SchoolProject.Api\obj\Debug\net7.0\SchoolProject.Api.AssemblyInfoInputs.cache
 C:\Users\Administrator\Desktop\Clean Architecture\SchoolProject\SchoolProject.Api\obj\Debug\net7.0\SchoolProject.Api.AssemblyInfo.cs
 C:\Users\Administrator\Desktop\Clean Architecture\SchoolProject\SchoolProject.Api\obj\Debug\net7.0\SchoolProject.Api.csproj.CoreCompileInputs.cache
-C:\Users\Administrator\Desktop\Clean Architecture\SchoolProject\SchoolProject.Api\obj\Debug\net7.0\SchoolProject.Api.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\Administrator\Desktop\Clean Architecture\SchoolProject\SchoolProject.Api\obj\Debug\net7.0\SchoolProject.Api.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\Administrator\Desktop\Clean Architecture\SchoolProject\SchoolProject.Api\obj\Debug\net7.0\staticwebassets\msbuild.SchoolProject.Api.Microsoft.AspNetCore.StaticWebAssets.props
 C:\Users\Administrator\Desktop\Clean Architecture\SchoolProject\SchoolProject.Api\obj\Debug\net7.0\staticwebassets\msbuild.build.SchoolProject.Api.props
@@ -88,3 +87,9 @@ C:\Users\Administrator\Desktop\Clean Architecture\SchoolProject\SchoolProject.Ap
 C:\Users\Administrator\Desktop\Clean Architecture\SchoolProject\SchoolProject.Api\bin\Debug\net7.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 C:\Users\Administrator\Desktop\Clean Architecture\SchoolProject\SchoolProject.Api\bin\Debug\net7.0\FluentValidation.dll
 C:\Users\Administrator\Desktop\Clean Architecture\SchoolProject\SchoolProject.Api\bin\Debug\net7.0\FluentValidation.DependencyInjectionExtensions.dll
+C:\Users\Administrator\Desktop\Clean Architecture\SchoolProject\SchoolProject.Api\bin\Debug\net7.0\JetBrains.Annotations.dll
+C:\Users\Administrator\Desktop\Clean Architecture\SchoolProject\SchoolProject.Api\bin\Debug\net7.0\X.PagedList.dll
+C:\Users\Administrator\Desktop\Clean Architecture\SchoolProject\SchoolProject.Api\bin\Debug\net7.0\Microsoft.Extensions.Localization.Abstractions.dll
+C:\Users\Administrator\Desktop\Clean Architecture\SchoolProject\SchoolProject.Api\bin\Debug\net7.0\Ar\SchoolProject.Core.resources.dll
+C:\Users\Administrator\Desktop\Clean Architecture\SchoolProject\SchoolProject.Api\bin\Debug\net7.0\En\SchoolProject.Core.resources.dll
+C:\Users\Administrator\Desktop\Clean Architecture\SchoolProject\SchoolProject.Api\obj\Debug\net7.0\SchoolProject.Api.MvcApplicationPartsAssemblyInfo.cs

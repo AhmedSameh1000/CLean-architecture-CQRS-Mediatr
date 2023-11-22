@@ -14,7 +14,11 @@ namespace SchoolProject.Data.Entities
         public int DID { get; set; }
 
         [StringLength(200)]
-        public string DName { get; set; }
+        public string DNameEn { get; set; }
+        [StringLength(300)]
+
+        public string DNameAr { get; set; }
+
 
         public virtual ICollection<Student> Students { get; set; }
         public virtual ICollection<DepartmentSubject> DepartmentSubjects { get; set; }

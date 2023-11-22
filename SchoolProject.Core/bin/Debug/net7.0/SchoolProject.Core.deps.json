@@ -13,12 +13,21 @@
           "FluentValidation.DependencyInjectionExtensions": "11.8.0",
           "MediatR": "12.1.1",
           "Microsoft.AspNetCore.Http.Abstractions": "2.2.0",
+          "Microsoft.Extensions.Localization.Abstractions": "7.0.14",
           "SchoolProject.Data": "1.0.0",
           "SchoolProject.Infrustructure": "1.0.0",
           "SchoolProject.Service": "1.0.0"
         },
         "runtime": {
           "SchoolProject.Core.dll": {}
+        },
+        "resources": {
+          "ar/SchoolProject.Core.resources.dll": {
+            "locale": "ar"
+          },
+          "en/SchoolProject.Core.resources.dll": {
+            "locale": "en"
+          }
         }
       },
       "AutoMapper/12.0.1": {
@@ -95,6 +104,14 @@
           "lib/netstandard2.1/FluentValidation.DependencyInjectionExtensions.dll": {
             "assemblyVersion": "11.0.0.0",
             "fileVersion": "11.8.0.0"
+          }
+        }
+      },
+      "JetBrains.Annotations/2022.3.1": {
+        "runtime": {
+          "lib/netstandard2.0/JetBrains.Annotations.dll": {
+            "assemblyVersion": "4242.42.42.42",
+            "fileVersion": "2022.3.1.0"
           }
         }
       },
@@ -312,6 +329,14 @@
           "lib/net7.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
             "assemblyVersion": "7.0.0.0",
             "fileVersion": "7.0.22.51805"
+          }
+        }
+      },
+      "Microsoft.Extensions.Localization.Abstractions/7.0.14": {
+        "runtime": {
+          "lib/net7.0/Microsoft.Extensions.Localization.Abstractions.dll": {
+            "assemblyVersion": "7.0.0.0",
+            "fileVersion": "7.0.1423.52316"
           }
         }
       },
@@ -643,6 +668,17 @@
           }
         }
       },
+      "X.PagedList/8.4.7": {
+        "dependencies": {
+          "JetBrains.Annotations": "2022.3.1"
+        },
+        "runtime": {
+          "lib/net7.0/X.PagedList.dll": {
+            "assemblyVersion": "8.4.7.0",
+            "fileVersion": "8.4.7.0"
+          }
+        }
+      },
       "SchoolProject.Data/1.0.0": {
         "runtime": {
           "SchoolProject.Data.dll": {}
@@ -651,7 +687,8 @@
       "SchoolProject.Infrustructure/1.0.0": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore.SqlServer": "7.0.14",
-          "SchoolProject.Data": "1.0.0"
+          "SchoolProject.Data": "1.0.0",
+          "X.PagedList": "8.4.7"
         },
         "runtime": {
           "SchoolProject.Infrustructure.dll": {}
@@ -715,6 +752,13 @@
       "sha512": "sha512-fNfH9XEwevXb1JKCWGEkmkIKDYK3+gaAG8ugeOggd0oc8hdwsl3SNC59qAM1tcKVUhcD+AEDCI4hXX5WWshpWg==",
       "path": "fluentvalidation.dependencyinjectionextensions/11.8.0",
       "hashPath": "fluentvalidation.dependencyinjectionextensions.11.8.0.nupkg.sha512"
+    },
+    "JetBrains.Annotations/2022.3.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-11nsS3+lFICGkztVs9PP2NRItxf9fF+qD6xEW/T0YGto52zj07wseUeBdMAU1ah9HNVTDZyRC1u4NWdtJScwhw==",
+      "path": "jetbrains.annotations/2022.3.1",
+      "hashPath": "jetbrains.annotations.2022.3.1.nupkg.sha512"
     },
     "MediatR/12.1.1": {
       "type": "package",
@@ -841,6 +885,13 @@
       "sha512": "sha512-h3j/QfmFN4S0w4C2A6X7arXij/M/OVw3uQHSOFxnND4DyAzO1F9eMX7Eti7lU/OkSthEE0WzRsfT/Dmx86jzCw==",
       "path": "microsoft.extensions.dependencyinjection.abstractions/7.0.0",
       "hashPath": "microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Localization.Abstractions/7.0.14": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-HZwPd87CCFAlqrxkwjQrHW/ZIsOIoQuT07Mnu8duW2GF+E+P+yKRJAiq0DjDjAJKln+Ni9zQyDI2Zt+/ull1pw==",
+      "path": "microsoft.extensions.localization.abstractions/7.0.14",
+      "hashPath": "microsoft.extensions.localization.abstractions.7.0.14.nupkg.sha512"
     },
     "Microsoft.Extensions.Logging/7.0.0": {
       "type": "package",
@@ -1107,6 +1158,13 @@
       "sha512": "sha512-IXoJOXIqc39AIe+CIR7koBtRGMiCt/LPM3lI+PELtDIy9XdyeSrwXFdWV9dzJ2Awl0paLWUaknLxFQ5HpHZUog==",
       "path": "system.windows.extensions/6.0.0",
       "hashPath": "system.windows.extensions.6.0.0.nupkg.sha512"
+    },
+    "X.PagedList/8.4.7": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ZA1WcyNviMUhivCgwKAm/5/YsNP3Yf/n81SzrPaHSJOcFzavA9MrXTT8M+ZX4fvHwLCL1bY6BPXvwZF5pRtgTg==",
+      "path": "x.pagedlist/8.4.7",
+      "hashPath": "x.pagedlist.8.4.7.nupkg.sha512"
     },
     "SchoolProject.Data/1.0.0": {
       "type": "project",

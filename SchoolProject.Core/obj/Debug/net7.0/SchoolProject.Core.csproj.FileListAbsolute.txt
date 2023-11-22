@@ -17,3 +17,10 @@ C:\Users\Administrator\Desktop\Clean Architecture\SchoolProject\SchoolProject.Co
 C:\Users\Administrator\Desktop\Clean Architecture\SchoolProject\SchoolProject.Core\obj\Debug\net7.0\refint\SchoolProject.Core.dll
 C:\Users\Administrator\Desktop\Clean Architecture\SchoolProject\SchoolProject.Core\obj\Debug\net7.0\SchoolProject.Core.pdb
 C:\Users\Administrator\Desktop\Clean Architecture\SchoolProject\SchoolProject.Core\obj\Debug\net7.0\ref\SchoolProject.Core.dll
+C:\Users\Administrator\Desktop\Clean Architecture\SchoolProject\SchoolProject.Core\bin\Debug\net7.0\Ar\SchoolProject.Core.resources.dll
+C:\Users\Administrator\Desktop\Clean Architecture\SchoolProject\SchoolProject.Core\bin\Debug\net7.0\En\SchoolProject.Core.resources.dll
+C:\Users\Administrator\Desktop\Clean Architecture\SchoolProject\SchoolProject.Core\obj\Debug\net7.0\SchoolProject.Core.Resources.SharedResources.Ar.resources
+C:\Users\Administrator\Desktop\Clean Architecture\SchoolProject\SchoolProject.Core\obj\Debug\net7.0\SchoolProject.Core.Resources.SharedResources.En.resources
+C:\Users\Administrator\Desktop\Clean Architecture\SchoolProject\SchoolProject.Core\obj\Debug\net7.0\SchoolProject.Core.csproj.GenerateResource.cache
+C:\Users\Administrator\Desktop\Clean Architecture\SchoolProject\SchoolProject.Core\obj\Debug\net7.0\Ar\SchoolProject.Core.resources.dll
+C:\Users\Administrator\Desktop\Clean Architecture\SchoolProject\SchoolProject.Core\obj\Debug\net7.0\En\SchoolProject.Core.resources.dll

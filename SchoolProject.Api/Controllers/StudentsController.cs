@@ -4,6 +4,7 @@ using SchoolProject.Api.Base;
 using SchoolProject.Core.Feature.Students.Commands.Models;
 using SchoolProject.Core.Feature.Students.DTOs;
 using SchoolProject.Core.Feature.Students.Queries.Models;
+using SchoolProject.Core.Wrappers;
 using SchoolProject.Data.AppMetaData;
 
 namespace SchoolProject.Api.Controllers
@@ -20,16 +21,17 @@ namespace SchoolProject.Api.Controllers
         }
 
         [HttpGet(RouterLinks.StudentRouting.Collection)]
-        public async Task<IActionResult> GetStudentList()
+        public async Task<IActionResult> GetStudentList([FromQuery] RequestParams requestParams)
         {
-            var response = await _mediator.Send(new GetStudentListQuery());
+            var response = await _mediator.Send(new GetStudentListQuery() { RequestParams = requestParams });
             return NewResult(response);
         }
 
         [HttpGet(RouterLinks.StudentRouting.GetById)]
-        public async Task<IActionResult> GetStudentList(int id)
+
+        public async Task<IActionResult> GetStudentList(int Id)
         {
-            var response = await _mediator.Send(new GetStudentByIdQuery(id));
+            var response = await _mediator.Send(new GetStudentByIdQuery(Id));
 
             return StatusCode((int)response.StatusCode, response);
         }

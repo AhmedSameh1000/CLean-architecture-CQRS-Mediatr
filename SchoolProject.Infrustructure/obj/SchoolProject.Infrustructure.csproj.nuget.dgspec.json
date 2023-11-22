@@ -108,6 +108,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[7.0.14, )"
+            },
+            "X.PagedList": {
+              "target": "Package",
+              "version": "[8.4.7, )"
             }
           },
           "imports": [

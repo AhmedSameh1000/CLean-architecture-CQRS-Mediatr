@@ -6,7 +6,8 @@ namespace SchoolProject.Core.Feature.Students.DTOs
     public class UpdateStudentDTO : IBaseIDDTO, IStudentProperty
     {
         public int Id { get; set; }
-        public string Name { get; set; }
+        public string NameAr { get; set; }
+        public string NameEn { get; set; }
 
         public string Address { get; set; }
 

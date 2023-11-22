@@ -30,14 +30,19 @@ namespace SchoolProject.Infrustructure.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("DID"));
 
-                    b.Property<string>("DName")
+                    b.Property<string>("DNameAr")
+                        .IsRequired()
+                        .HasMaxLength(300)
+                        .HasColumnType("nvarchar(300)");
+
+                    b.Property<string>("DNameEn")
                         .IsRequired()
                         .HasMaxLength(200)
                         .HasColumnType("nvarchar(200)");
 
                     b.HasKey("DID");
 
-                    b.ToTable("Departments");
+                    b.ToTable("Departments", (string)null);
                 });
 
             modelBuilder.Entity("SchoolProject.Data.Entities.DepartmentSubject", b =>
@@ -60,7 +65,7 @@ namespace SchoolProject.Infrustructure.Migrations
 
                     b.HasIndex("SubID");
 
-                    b.ToTable("DepartmentSubjects");
+                    b.ToTable("DepartmentSubjects", (string)null);
                 });
 
             modelBuilder.Entity("SchoolProject.Data.Entities.Student", b =>
@@ -79,7 +84,12 @@ namespace SchoolProject.Infrustructure.Migrations
                     b.Property<int?>("DID")
                         .HasColumnType("int");
 
-                    b.Property<string>("Name")
+                    b.Property<string>("NameAr")
+                        .IsRequired()
+                        .HasMaxLength(500)
+                        .HasColumnType("nvarchar(500)");
+
+                    b.Property<string>("NameEn")
                         .IsRequired()
                         .HasMaxLength(200)
                         .HasColumnType("nvarchar(200)");
@@ -92,7 +102,7 @@ namespace SchoolProject.Infrustructure.Migrations
 
                     b.HasIndex("DID");
 
-                    b.ToTable("Students");
+                    b.ToTable("Students", (string)null);
                 });
 
             modelBuilder.Entity("SchoolProject.Data.Entities.StudentSubject", b =>
@@ -115,7 +125,7 @@ namespace SchoolProject.Infrustructure.Migrations
 
                     b.HasIndex("SubId");
 
-                    b.ToTable("StudentSubjects");
+                    b.ToTable("StudentSubjects", (string)null);
                 });
 
             modelBuilder.Entity("SchoolProject.Data.Entities.Subject", b =>
@@ -136,7 +146,7 @@ namespace SchoolProject.Infrustructure.Migrations
 
                     b.HasKey("SubId");
 
-                    b.ToTable("Subjects");
+                    b.ToTable("Subjects", (string)null);
                 });
 
             modelBuilder.Entity("SchoolProject.Data.Entities.DepartmentSubject", b =>

@@ -1,8 +1,11 @@
+using Microsoft.AspNetCore.Localization;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Options;
 using SchoolProject.Core;
 using SchoolProject.Infrustructure;
 using SchoolProject.Infrustructure.Data;
 using SchoolProject.Service;
+using System.Globalization;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -27,6 +30,28 @@ builder.Services
 
 #endregion DependenciesInjection
 
+#region Localization
+
+builder.Services.AddLocalization(opt =>
+ {
+     opt.ResourcesPath = "";
+ });
+
+builder.Services.Configure<RequestLocalizationOptions>(options =>
+    {
+        List<CultureInfo> supportedCultures = new List<CultureInfo>
+        {
+            new CultureInfo("en-US"),
+            new CultureInfo("ar-EG")
+        };
+
+        options.DefaultRequestCulture = new RequestCulture("ar-EG");
+        options.SupportedCultures = supportedCultures;
+        options.SupportedUICultures = supportedCultures;
+    });
+
+#endregion Localization
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -35,6 +60,13 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+#region LOcalization MiddelWare
+
+var options = app.Services.GetService<IOptions<RequestLocalizationOptions>>();
+app.UseRequestLocalization(options.Value);
+
+#endregion LOcalization MiddelWare
 
 app.UseHttpsRedirection();
 

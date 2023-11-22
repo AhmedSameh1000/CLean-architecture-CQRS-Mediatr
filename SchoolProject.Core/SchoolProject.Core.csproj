@@ -18,6 +18,16 @@
     <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.8.0" />
     <PackageReference Include="MediatR" Version="12.1.1" />
     <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
+    <PackageReference Include="Microsoft.Extensions.Localization.Abstractions" Version="7.0.14" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="SharedResources\SharedResources.ar.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="SharedResources\SharedResources.en.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
   </ItemGroup>
 
 </Project>

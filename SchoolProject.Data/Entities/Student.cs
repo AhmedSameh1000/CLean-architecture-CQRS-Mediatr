@@ -7,11 +7,14 @@ namespace SchoolProject.Data.Entities
     {
         public int StudentId { get; set; }
 
-        [StringLength(200)]
-        public string Name { get; set; }
-
         [StringLength(500)]
         public string Address { get; set; }
+
+        [StringLength(200)]
+        public string NameEn { get; set; }
+
+        [StringLength(500)]
+        public string NameAr { get; set; }
 
         public string phone { get; set; }
 

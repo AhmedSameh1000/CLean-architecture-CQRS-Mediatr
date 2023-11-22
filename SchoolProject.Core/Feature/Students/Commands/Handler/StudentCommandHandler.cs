@@ -1,10 +1,12 @@
 ﻿using AutoMapper;
 using FluentValidation;
 using MediatR;
+using Microsoft.Extensions.Localization;
 using SchoolProject.Core.Bases;
 using SchoolProject.Core.Feature.Students.Commands.Models;
 using SchoolProject.Core.Feature.Students.DTOs;
 using SchoolProject.Core.Feature.Students.Queries.Results;
+using SchoolProject.Core.Resources;
 using SchoolProject.Data.Entities;
 using SchoolProject.Service.Abstracts;
 
@@ -21,6 +23,7 @@ namespace SchoolProject.Core.Feature.Students.Commands.Handler
         private readonly IMapper _mapper;
         private readonly IValidator<CreateStudentDTO> _createStudentValidator;
         private readonly IValidator<UpdateStudentDTO> _updateStudentValidator;
+        private readonly IStringLocalizer<SharedResources> _stringLocalizer;
 
         #endregion Fildes
 
@@ -30,12 +33,14 @@ namespace SchoolProject.Core.Feature.Students.Commands.Handler
             IStudentService studentService,
             IMapper mapper,
             IValidator<CreateStudentDTO> CreateStudentValidator,
-            IValidator<UpdateStudentDTO> UpdateStudentValidator)
+            IValidator<UpdateStudentDTO> UpdateStudentValidator,
+            IStringLocalizer<SharedResources> stringLocalizer) : base(stringLocalizer)
         {
             _studentService = studentService;
             _mapper = mapper;
             _createStudentValidator = CreateStudentValidator;
             _updateStudentValidator = UpdateStudentValidator;
+            _stringLocalizer = stringLocalizer;
         }
 
         #endregion Constractor
@@ -60,7 +65,7 @@ namespace SchoolProject.Core.Feature.Students.Commands.Handler
             }
             else
             {
-                return BadRequest<StudentToReturn>("Error Whene Save Student");
+                return BadRequest<StudentToReturn>(_stringLocalizer[SharedSesourcesKeys.BadRequest]);
             }
         }
 
@@ -70,7 +75,7 @@ namespace SchoolProject.Core.Feature.Students.Commands.Handler
 
             if (IsExist is null)
             {
-                return NotFound<StudentToReturn>($"User With id {request.UpdateStudentDTO.Id} Not Found");
+                return NotFound<StudentToReturn>(_stringLocalizer[SharedSesourcesKeys.NotFound]);
             }
 
             var result = await _updateStudentValidator.ValidateAsync(request.UpdateStudentDTO);
@@ -90,7 +95,7 @@ namespace SchoolProject.Core.Feature.Students.Commands.Handler
             }
             else
             {
-                return BadRequest<StudentToReturn>("Error Whene Update Student");
+                return BadRequest<StudentToReturn>(_stringLocalizer[SharedSesourcesKeys.BadRequest]);
             }
         }
 
@@ -100,7 +105,7 @@ namespace SchoolProject.Core.Feature.Students.Commands.Handler
 
             if (Student is null)
             {
-                return NotFound<bool>($"Student With Id {request.Id} is not Fount");
+                return NotFound<bool>(_stringLocalizer[SharedSesourcesKeys.NotFound]);
             }
 
             var isDeleted = await _studentService.DeleteAsync(Student);
@@ -108,7 +113,7 @@ namespace SchoolProject.Core.Feature.Students.Commands.Handler
             if (isDeleted)
                 return Deleted<bool>();
             else
-                return BadRequest<bool>("Error While Delete this User");
+                return BadRequest<bool>(_stringLocalizer[SharedSesourcesKeys.BadRequest]);
         }
 
         #endregion HandleFunctions

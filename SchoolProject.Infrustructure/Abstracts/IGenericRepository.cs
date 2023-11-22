@@ -1,10 +1,14 @@
-﻿using System.Linq.Expressions;
+﻿using SchoolProject.Core.Wrappers;
+using System.Linq.Expressions;
+using X.PagedList;
 
 namespace SchoolProject.Infrustructure.Abstracts
 {
     public interface IGenericRepository<T> where T : class
     {
         Task<IEnumerable<T>> GetAllAsTracking(string[] InclueProperties = null);
+
+        Task<IPagedList<T>> GetAllAsTracking(RequestParams requestParams, string[] InclueProperties = null);
 
         Task<IEnumerable<T>> GetAllAsNoTracking(string[] InclueProperties = null);
 
@@ -19,6 +23,8 @@ namespace SchoolProject.Infrustructure.Abstracts
         void RemoveRange(IEnumerable<T> Entities);
 
         Task<bool> IsExist(int id);
+
+        int Count();
 
         Task<bool> SaveChanges();
 

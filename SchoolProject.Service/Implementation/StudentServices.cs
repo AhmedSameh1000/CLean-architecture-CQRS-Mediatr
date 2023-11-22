@@ -1,6 +1,8 @@
-﻿using SchoolProject.Data.Entities;
+﻿using SchoolProject.Core.Wrappers;
+using SchoolProject.Data.Entities;
 using SchoolProject.Infrustructure.Abstracts;
 using SchoolProject.Service.Abstracts;
+using X.PagedList;
 
 namespace SchoolProject.Service.Implementation
 {
@@ -23,11 +25,11 @@ namespace SchoolProject.Service.Implementation
 
         #region HandleFunction
 
-        public async Task<List<Student>> GetStudentsAsync()
+        public async Task<IPagedList<Student>> GetStudentsAsync(RequestParams requestParams)
         {
-            var Student = await _studentRepository.GetAllAsTracking(new[] { "Department" });
+            var Student = await _studentRepository.GetAllAsTracking(requestParams, new[] { "Department" });
 
-            return Student.ToList();
+            return Student;
         }
 
         public async Task<Student> GetStudentByIdAsync(int id)
@@ -62,6 +64,11 @@ namespace SchoolProject.Service.Implementation
             _studentRepository.Remove(student);
 
             return await _studentRepository.SaveChanges();
+        }
+
+        public int GetCount()
+        {
+            return _studentRepository.Count();
         }
 
         #endregion HandleFunction
