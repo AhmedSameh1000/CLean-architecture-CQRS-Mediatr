@@ -6,9 +6,9 @@ namespace SchoolProject.Data.Entities
     {
         public Subject()
         {
-            StudentSubjects = new HashSet<StudentSubject>();
-
-            DepartmentSubjects = new HashSet<DepartmentSubject>();
+            Instructors = new HashSet<Instructor>();
+            Students = new HashSet<Student>();
+            Departments = new HashSet<Department>();
         }
 
         [Key]
@@ -17,9 +17,12 @@ namespace SchoolProject.Data.Entities
         [StringLength(500)]
         public string SubName { get; set; }
 
+        public decimal SubjectGrade { get; set; }
+
         public DateTime Period { get; set; }
 
-        public virtual ICollection<StudentSubject> StudentSubjects { get; set; }
-        public virtual ICollection<DepartmentSubject> DepartmentSubjects { get; set; }
+        public virtual ICollection<Instructor> Instructors { get; set; }
+        public virtual ICollection<Department> Departments { get; set; }
+        public virtual ICollection<Student> Students { get; set; }
     }
 }

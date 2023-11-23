@@ -5,6 +5,11 @@ namespace SchoolProject.Data.Entities
 {
     public class Student
     {
+        public Student()
+        {
+            Subjects = new HashSet<Subject>();
+        }
+
         public int StudentId { get; set; }
 
         [StringLength(500)]
@@ -23,6 +28,7 @@ namespace SchoolProject.Data.Entities
         [ForeignKey("DID")]
         public virtual Department Department { get; set; }
 
+        public ICollection<Subject> Subjects { get; set; }
         //[InverseProperty("Students")]
     }
 }

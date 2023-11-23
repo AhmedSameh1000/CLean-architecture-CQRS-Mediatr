@@ -84,13 +84,14 @@ namespace SchoolProject.Core.Feature.Students.Commands.Handler
             {
                 return BadRequest<StudentToReturn>(string.Join(",", result.Errors.Select(c => c.ErrorMessage)));
             }
-            var UserToUpdate = _mapper.Map<Student>(request.UpdateStudentDTO);
 
-            var Student = await _studentService.UpdateAsync(UserToUpdate);
+            IsExist = _mapper.Map<Student>(request.UpdateStudentDTO);
 
-            if (Student != null)
+            await _studentService.UpdateAsync(IsExist);
+
+            if (IsExist != null)
             {
-                var StudentToReturn = _mapper.Map<StudentToReturn>(Student);
+                var StudentToReturn = _mapper.Map<StudentToReturn>(IsExist);
                 return Success(StudentToReturn);
             }
             else

@@ -9,8 +9,8 @@ namespace SchoolProject.Core.Mapping.StudentMapper
         public void GetStudentQueryMapping()
         {
             CreateMap<Student, StudentToReturn>()
-             .ForMember(dest => dest.DepartmentName, Options => Options.MapFrom(src => LocalizeEntities.GetLicalizedName(src.NameAr, src.NameEn)))
-             .ForMember(des => des.Name, options => options.MapFrom(src => LocalizeEntities.GetLicalizedName(src.Department.DNameAr, src.Department.DNameEn)))
+             .ForMember(dest => dest.Name, Options => Options.MapFrom(src => LocalizeEntities.GetLicalizedName(src.NameAr, src.NameEn)))
+             .ForMember(des => des.DepartmentName, options => options.MapFrom(src => LocalizeEntities.GetLicalizedName(src.Department.DNameAr, src.Department.DNameEn)))
              .ReverseMap();
         }
     }
