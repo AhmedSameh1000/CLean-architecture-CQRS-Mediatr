@@ -1,7 +1,8 @@
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Localization;
-using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
 using SchoolProject.Core;
+using SchoolProject.Data.Entities.Identity;
 using SchoolProject.Infrustructure;
 using SchoolProject.Infrustructure.Data;
 using SchoolProject.Service;
@@ -16,17 +17,24 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Services.AddDbContext<AppDbContext>(options =>
-{
-    options.UseSqlServer(builder.Configuration.GetConnectionString("ConStr"));
-});
-
 #region DependenciesInjection
 
 builder.Services
+    .ServiceRegistration(builder.Configuration)
     .AddInfrustructureDependencies()
     .AddServicesDependencies()
     .AddCoreDependencies();
+
+builder.Services.AddIdentity<User, IdentityRole>(options =>
+{
+    options.Password.RequiredLength = 5;
+    options.Password.RequireDigit = false;
+    options.Password.RequireLowercase = false;
+    options.Password.RequireUppercase = false;
+    options.SignIn.RequireConfirmedEmail = true;
+})
+.AddEntityFrameworkStores<AppDbContext>()
+.AddDefaultTokenProviders();
 
 #endregion DependenciesInjection
 

@@ -9,3 +9,4 @@ C:\Users\Administrator\Desktop\Clean Architecture\SchoolProject\SchoolProject.Da
 C:\Users\Administrator\Desktop\Clean Architecture\SchoolProject\SchoolProject.Data\obj\Debug\net7.0\refint\SchoolProject.Data.dll
 C:\Users\Administrator\Desktop\Clean Architecture\SchoolProject\SchoolProject.Data\obj\Debug\net7.0\SchoolProject.Data.pdb
 C:\Users\Administrator\Desktop\Clean Architecture\SchoolProject\SchoolProject.Data\obj\Debug\net7.0\ref\SchoolProject.Data.dll
+C:\Users\Administrator\Desktop\Clean Architecture\SchoolProject\SchoolProject.Data\obj\Debug\net7.0\SchoolProject.Data.csproj.AssemblyReference.cache

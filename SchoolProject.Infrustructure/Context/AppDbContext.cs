@@ -1,10 +1,13 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 using SchoolProject.Data.Entities;
+using SchoolProject.Data.Entities.Identity;
 using System.Reflection;
 
 namespace SchoolProject.Infrustructure.Data
 {
-    public class AppDbContext : DbContext
+    public class AppDbContext : IdentityDbContext<User>
     {
         public AppDbContext(DbContextOptions options) : base(options)
         {
@@ -20,6 +23,9 @@ namespace SchoolProject.Infrustructure.Data
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            modelBuilder.Entity<IdentityUserLogin<string>>().HasNoKey();
+            modelBuilder.Entity<IdentityUserRole<string>>().HasNoKey();
+            modelBuilder.Entity<IdentityUserToken<string>>().HasNoKey();
             modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
         }
     }
