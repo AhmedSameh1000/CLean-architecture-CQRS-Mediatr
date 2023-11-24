@@ -30,4 +30,9 @@
     </EmbeddedResource>
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Feature\Departments\Commands\" />
+    <Folder Include="Feature\Departments\CommandsValidator\" />
+  </ItemGroup>
+
 </Project>

@@ -1,6 +1,4 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
-
-namespace SchoolProject.Data.Entities
+﻿namespace SchoolProject.Data.Entities
 {
     public class Instructor
     {
@@ -20,24 +18,24 @@ namespace SchoolProject.Data.Entities
 
         public decimal salary { get; set; }
 
-        [InverseProperty("Instructor")]
+        //[InverseProperty("Instructor")]
         public Department DepartmentManged { get; set; }
 
         public virtual ICollection<Subject> Subjects { get; set; }
 
         public int DID { get; set; }
 
-        [ForeignKey("DID")]
-        [InverseProperty("Instructors")]
+        //[ForeignKey("DID")]
+        //[InverseProperty("Instructors")]
         public Department Department { get; set; }
 
         public int? SupervisorId { get; set; }
 
-        [ForeignKey("SupervisorId")]
-        [InverseProperty("SupervisedInstructors")]
-        public Instructor Supervisor { get; set; }
+        //[ForeignKey("SupervisorId")]
+        //[InverseProperty("SupervisedInstructors")]
+        public Instructor? Supervisor { get; set; }
 
-        [InverseProperty("Supervisor")]
+        //[InverseProperty("Supervisor")]
         public ICollection<Instructor> SupervisedInstructors { get; set; }
     }
 }

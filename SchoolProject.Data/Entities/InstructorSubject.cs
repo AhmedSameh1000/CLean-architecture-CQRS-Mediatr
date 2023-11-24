@@ -1,17 +1,15 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
-
-namespace SchoolProject.Data.Entities
+﻿namespace SchoolProject.Data.Entities
 {
-    public class InstructorSubjects
+    public class InstructorSubject
     {
         public int InstructorId { get; set; }
 
         public int SubjectId { get; set; }
 
-        [ForeignKey(nameof(InstructorId))]
+        //[ForeignKey(nameof(InstructorId))]
         public Instructor Instructor { get; set; }
 
-        [ForeignKey(nameof(SubjectId))]
+        //[ForeignKey(nameof(SubjectId))]
         public Subject Subject { get; set; }
     }
 }

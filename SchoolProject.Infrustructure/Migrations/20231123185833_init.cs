@@ -1,12 +1,11 @@
-﻿using System;
-using Microsoft.EntityFrameworkCore.Migrations;
+﻿using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
 namespace SchoolProject.Infrustructure.Migrations
 {
     /// <inheritdoc />
-    public partial class Init : Migration
+    public partial class init : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -17,9 +16,9 @@ namespace SchoolProject.Infrustructure.Migrations
                 {
                     SubId = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    SubName = table.Column<string>(type: "nvarchar(500)", maxLength: 500, nullable: false),
+                    SubName = table.Column<string>(type: "VarChar(50)", maxLength: 50, nullable: false),
                     SubjectGrade = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
-                    Period = table.Column<DateTime>(type: "datetime2", nullable: false)
+                    Period = table.Column<int>(type: "int", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -32,8 +31,8 @@ namespace SchoolProject.Infrustructure.Migrations
                 {
                     DID = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    DNameEn = table.Column<string>(type: "nvarchar(200)", maxLength: 200, nullable: false),
-                    DNameAr = table.Column<string>(type: "nvarchar(300)", maxLength: 300, nullable: false),
+                    DNameEn = table.Column<string>(type: "VarChar(100)", maxLength: 100, nullable: false),
+                    DNameAr = table.Column<string>(type: "NVarChar(200)", maxLength: 200, nullable: false),
                     InstructorManger = table.Column<int>(type: "int", nullable: true)
                 },
                 constraints: table =>
@@ -71,11 +70,11 @@ namespace SchoolProject.Infrustructure.Migrations
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    InstructorNameAr = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    InstructorNameEn = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    InstructorNameAr = table.Column<string>(type: "NVarChar(100)", maxLength: 100, nullable: false),
+                    InstructorNameEn = table.Column<string>(type: "VarChar(100)", maxLength: 100, nullable: false),
                     Address = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Position = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    salary = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
+                    salary = table.Column<decimal>(type: "decimal(18,2)", maxLength: 100, nullable: false),
                     DID = table.Column<int>(type: "int", nullable: false),
                     SupervisorId = table.Column<int>(type: "int", nullable: true)
                 },
@@ -87,12 +86,13 @@ namespace SchoolProject.Infrustructure.Migrations
                         column: x => x.DID,
                         principalTable: "Departments",
                         principalColumn: "DID",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.Restrict);
                     table.ForeignKey(
                         name: "FK_Instructors_Instructors_SupervisorId",
                         column: x => x.SupervisorId,
                         principalTable: "Instructors",
-                        principalColumn: "Id");
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Restrict);
                 });
 
             migrationBuilder.CreateTable(
@@ -101,10 +101,10 @@ namespace SchoolProject.Infrustructure.Migrations
                 {
                     StudentId = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Address = table.Column<string>(type: "nvarchar(500)", maxLength: 500, nullable: false),
-                    NameEn = table.Column<string>(type: "nvarchar(200)", maxLength: 200, nullable: false),
-                    NameAr = table.Column<string>(type: "nvarchar(500)", maxLength: 500, nullable: false),
-                    phone = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Address = table.Column<string>(type: "VarChar(200)", maxLength: 200, nullable: false),
+                    NameEn = table.Column<string>(type: "VarChar(100)", maxLength: 100, nullable: false),
+                    NameAr = table.Column<string>(type: "NVarChar(200)", maxLength: 200, nullable: false),
+                    phone = table.Column<string>(type: "VarChar(100)", maxLength: 100, nullable: false),
                     DID = table.Column<int>(type: "int", nullable: true)
                 },
                 constraints: table =>
@@ -208,7 +208,8 @@ namespace SchoolProject.Infrustructure.Migrations
                 table: "Departments",
                 column: "InstructorManger",
                 principalTable: "Instructors",
-                principalColumn: "Id");
+                principalColumn: "Id",
+                onDelete: ReferentialAction.SetNull);
         }
 
         /// <inheritdoc />

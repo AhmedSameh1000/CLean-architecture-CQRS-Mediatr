@@ -6,8 +6,11 @@ namespace SchoolProject.Infrustructure.Repositories
 {
     public class DepartmentRepository : GenericRepository<Department>, IDepartmentRepository
     {
+        private readonly AppDbContext _dbContext;
+
         public DepartmentRepository(AppDbContext dbContext) : base(dbContext)
         {
+            _dbContext = dbContext;
         }
     }
 }

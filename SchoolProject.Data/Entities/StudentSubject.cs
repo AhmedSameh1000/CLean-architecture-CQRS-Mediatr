@@ -1,6 +1,4 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
-
-namespace SchoolProject.Data.Entities
+﻿namespace SchoolProject.Data.Entities
 {
     public class StudentSubject
     {
@@ -10,10 +8,10 @@ namespace SchoolProject.Data.Entities
 
         public decimal? StudentGrade { get; set; }
 
-        [ForeignKey("StuId")]
+        //[ForeignKey("StuId")]
         public virtual Student Student { get; set; }
 
-        [ForeignKey("SubId")]
+        //[ForeignKey("SubId")]
         public virtual Subject Subject { get; set; }
     }
 }

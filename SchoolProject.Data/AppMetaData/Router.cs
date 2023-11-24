@@ -18,5 +18,10 @@
             public const string Update = $"{Collection}/Update";
             public const string Delete = $"{Collection}/Delete/{Id}";
         }
+
+        public static class DepartmentRouting
+        {
+            public const string Departments = $"{Rule}/Departments/{Id}";
+        }
     }
 }
