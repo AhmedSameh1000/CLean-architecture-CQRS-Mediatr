@@ -123,6 +123,9 @@
   <data name="BadRequest" xml:space="preserve">
     <value>حدثت مشكله</value>
   </data>
+  <data name="ConfirmPassword" xml:space="preserve">
+    <value>يجب تاكيد كلمه المرور</value>
+  </data>
   <data name="Created" xml:space="preserve">
     <value>تم انشائه</value>
   </data>
@@ -135,8 +138,17 @@
   <data name="Done" xml:space="preserve">
     <value>تم بنجاح</value>
   </data>
+  <data name="Email" xml:space="preserve">
+    <value>البريد الالكتروني</value>
+  </data>
+  <data name="EmailIsAlreadyRegisterd" xml:space="preserve">
+    <value>البريد الالكتروني مستخدم بالفعل</value>
+  </data>
   <data name="LessThan10" xml:space="preserve">
     <value>يجب ان يكون اقل من 10 حروف</value>
+  </data>
+  <data name="LogInSuccess" xml:space="preserve">
+    <value>تم التسجيل بنجاح</value>
   </data>
   <data name="Name" xml:space="preserve">
     <value>الاسم</value>
@@ -146,6 +158,12 @@
   </data>
   <data name="NotFound" xml:space="preserve">
     <value>غير موجود</value>
+  </data>
+  <data name="NotMatch" xml:space="preserve">
+    <value>كلمات المرور غير متطابقه</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>كلمه المرور</value>
   </data>
   <data name="Phone" xml:space="preserve">
     <value>رقم الهاتف</value>
@@ -158,5 +176,11 @@
   </data>
   <data name="Updated" xml:space="preserve">
     <value>تم التحديث بنجاح</value>
+  </data>
+  <data name="UserName" xml:space="preserve">
+    <value>اسم المستخدم</value>
+  </data>
+  <data name="UserNameIsAlreadyRegisterd" xml:space="preserve">
+    <value>اسم المستخدكمستخدم بالفعل</value>
   </data>
 </root>

@@ -25,12 +25,13 @@ builder.Services
     .AddServicesDependencies()
     .AddCoreDependencies();
 
-builder.Services.AddIdentity<User, IdentityRole>(options =>
+builder.Services.AddIdentity<User, IdentityRole<int>>(options =>
 {
     options.Password.RequiredLength = 5;
     options.Password.RequireDigit = false;
     options.Password.RequireLowercase = false;
     options.Password.RequireUppercase = false;
+    options.Password.RequireNonAlphanumeric = false; // Set this to true to require at least one non-alphanumeric character
     options.SignIn.RequireConfirmedEmail = true;
 })
 .AddEntityFrameworkStores<AppDbContext>()

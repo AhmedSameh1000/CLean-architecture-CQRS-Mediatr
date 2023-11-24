@@ -123,6 +123,9 @@
   <data name="BadRequest" xml:space="preserve">
     <value>Bad Request</value>
   </data>
+  <data name="ConfirmPassword" xml:space="preserve">
+    <value>Must Confirm Password</value>
+  </data>
   <data name="Created" xml:space="preserve">
     <value>Created</value>
   </data>
@@ -135,8 +138,17 @@
   <data name="Done" xml:space="preserve">
     <value>Success</value>
   </data>
+  <data name="Email" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="EmailIsAlreadyRegisterd" xml:space="preserve">
+    <value>Email is Already Registered</value>
+  </data>
   <data name="LessThan10" xml:space="preserve">
     <value>Must Less Than 10</value>
+  </data>
+  <data name="LogInSuccess" xml:space="preserve">
+    <value>User Log In Successfuly</value>
   </data>
   <data name="Name" xml:space="preserve">
     <value>Name</value>
@@ -146,6 +158,12 @@
   </data>
   <data name="NotFound" xml:space="preserve">
     <value>Not Found</value>
+  </data>
+  <data name="NotMatch" xml:space="preserve">
+    <value>Password Does not match ConfirmPassword</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>Password</value>
   </data>
   <data name="Phone" xml:space="preserve">
     <value>Phone</value>
@@ -158,5 +176,11 @@
   </data>
   <data name="Updated" xml:space="preserve">
     <value>Updated</value>
+  </data>
+  <data name="UserName" xml:space="preserve">
+    <value>UserName</value>
+  </data>
+  <data name="UserNameIsAlreadyRegisterd" xml:space="preserve">
+    <value>UserName is Already Registered</value>
   </data>
 </root>

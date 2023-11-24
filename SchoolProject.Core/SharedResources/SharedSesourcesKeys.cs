@@ -15,5 +15,13 @@
         public const string Phone = "Phone";
         public const string Department = "Department";
         public const string Address = "Address";
+        public const string Email = "Email";
+        public const string UserName = "UserName";
+        public const string Password = "Password";
+        public const string NotMatch = "NotMatch";
+        public const string ConfirmPassword = "ConfirmPassword";
+        public const string EmailIsAlreadyRegisterd = "EmailIsAlreadyRegisterd";
+        public const string UserNameIsAlreadyRegisterd = "UserNameIsAlreadyRegisterd";
+        public const string LogInSuccess = "LogInSuccess";
     }
 }

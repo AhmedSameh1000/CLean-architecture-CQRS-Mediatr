@@ -7,7 +7,7 @@ using System.Reflection;
 
 namespace SchoolProject.Infrustructure.Data
 {
-    public class AppDbContext : IdentityDbContext<User>
+    public class AppDbContext : IdentityDbContext<User, IdentityRole<int>, int>
     {
         public AppDbContext(DbContextOptions options) : base(options)
         {
@@ -23,9 +23,9 @@ namespace SchoolProject.Infrustructure.Data
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<IdentityUserLogin<string>>().HasNoKey();
-            modelBuilder.Entity<IdentityUserRole<string>>().HasNoKey();
-            modelBuilder.Entity<IdentityUserToken<string>>().HasNoKey();
+            modelBuilder.Entity<IdentityUserLogin<int>>().HasNoKey();
+            modelBuilder.Entity<IdentityUserRole<int>>().HasNoKey();
+            modelBuilder.Entity<IdentityUserToken<int>>().HasNoKey();
             modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
         }
     }

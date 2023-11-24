@@ -23,5 +23,10 @@
         {
             public const string Departments = $"{Rule}/Departments/{Id}";
         }
+
+        public static class UserRouting
+        {
+            public const string Register = $"{Rule}/Users/Register";
+        }
     }
 }
