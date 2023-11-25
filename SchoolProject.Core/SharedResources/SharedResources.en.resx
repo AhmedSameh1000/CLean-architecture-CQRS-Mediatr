@@ -144,6 +144,12 @@
   <data name="EmailIsAlreadyRegisterd" xml:space="preserve">
     <value>Email is Already Registered</value>
   </data>
+  <data name="IsSameEmail" xml:space="preserve">
+    <value>Same Email</value>
+  </data>
+  <data name="IsSameUserName" xml:space="preserve">
+    <value>Same UserName</value>
+  </data>
   <data name="LessThan10" xml:space="preserve">
     <value>Must Less Than 10</value>
   </data>
@@ -175,7 +181,7 @@
     <value>Un Authrize</value>
   </data>
   <data name="Updated" xml:space="preserve">
-    <value>Updated</value>
+    <value>Updated Successfuly</value>
   </data>
   <data name="UserName" xml:space="preserve">
     <value>UserName</value>

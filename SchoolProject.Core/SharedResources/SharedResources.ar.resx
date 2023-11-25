@@ -144,6 +144,12 @@
   <data name="EmailIsAlreadyRegisterd" xml:space="preserve">
     <value>البريد الالكتروني مستخدم بالفعل</value>
   </data>
+  <data name="IsSameEmail" xml:space="preserve">
+    <value>انه نفس الحساب بالفعل </value>
+  </data>
+  <data name="IsSameUserName" xml:space="preserve">
+    <value>انه نفس اسم المستخدم بالفعل</value>
+  </data>
   <data name="LessThan10" xml:space="preserve">
     <value>يجب ان يكون اقل من 10 حروف</value>
   </data>
@@ -181,6 +187,6 @@
     <value>اسم المستخدم</value>
   </data>
   <data name="UserNameIsAlreadyRegisterd" xml:space="preserve">
-    <value>اسم المستخدكمستخدم بالفعل</value>
+    <value>اسم المستخدم موجود بالفعل</value>
   </data>
 </root>

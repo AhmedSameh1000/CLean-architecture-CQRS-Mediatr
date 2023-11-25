@@ -27,6 +27,10 @@
         public static class UserRouting
         {
             public const string Register = $"{Rule}/Users/Register";
+            public const string GetAll = $"{Rule}/Users";
+            public const string GetById = $"{Rule}/Users/{Id}";
+            public const string Updateuser = $"{Rule}/Users/Update";
+            public const string DeleteUser = $"{Rule}/Users/Delete/{Id}";
         }
     }
 }

@@ -33,8 +33,6 @@
   <ItemGroup>
     <Folder Include="Feature\Departments\Commands\" />
     <Folder Include="Feature\Departments\CommandsValidator\" />
-    <Folder Include="Feature\User\Queries\Handlers\" />
-    <Folder Include="Feature\User\Queries\Models\" />
   </ItemGroup>
 
 </Project>

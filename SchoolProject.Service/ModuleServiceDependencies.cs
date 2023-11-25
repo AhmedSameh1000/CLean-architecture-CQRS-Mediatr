@@ -10,6 +10,7 @@ namespace SchoolProject.Service
         {
             services.AddScoped<IStudentService, StudentServices>();
             services.AddScoped<IDepartmentService, DepartmentService>();
+            services.AddScoped<IUserService, UserService>();
 
             return services;
         }

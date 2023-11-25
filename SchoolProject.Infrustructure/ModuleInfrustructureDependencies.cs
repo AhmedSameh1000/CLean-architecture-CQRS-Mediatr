@@ -12,6 +12,7 @@ namespace SchoolProject.Infrustructure
             services.AddScoped<IDepartmentRepository, DepartmentRepository>();
             services.AddScoped<ISubjectRepository, SubjectRepository>();
             services.AddScoped<IInstructorRepository, InstructorRepository>();
+            services.AddScoped<IUserRepository, UserRepository>();
             services.AddScoped<IUnitOfWork, UnitOfWork>();
             return services;
         }

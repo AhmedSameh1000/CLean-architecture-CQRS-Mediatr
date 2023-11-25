@@ -23,5 +23,8 @@
         public const string EmailIsAlreadyRegisterd = "EmailIsAlreadyRegisterd";
         public const string UserNameIsAlreadyRegisterd = "UserNameIsAlreadyRegisterd";
         public const string LogInSuccess = "LogInSuccess";
+        public const string Updated = "Updated";
+        public const string IsSameEmail = "IsSameEmail";
+        public const string IsSameUserName = "IsSameUserName";
     }
 }
