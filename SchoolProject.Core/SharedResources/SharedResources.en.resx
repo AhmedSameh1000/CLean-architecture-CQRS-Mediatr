@@ -171,6 +171,9 @@
   <data name="Password" xml:space="preserve">
     <value>Password</value>
   </data>
+  <data name="PasswordIsUnCorrect" xml:space="preserve">
+    <value>Password Is Un Correct</value>
+  </data>
   <data name="Phone" xml:space="preserve">
     <value>Phone</value>
   </data>

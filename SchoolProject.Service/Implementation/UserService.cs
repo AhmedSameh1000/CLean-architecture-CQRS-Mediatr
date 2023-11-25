@@ -1,4 +1,5 @@
-﻿using SchoolProject.Core.Wrappers;
+﻿using Microsoft.AspNetCore.Identity;
+using SchoolProject.Core.Wrappers;
 using SchoolProject.Data.Entities.Identity;
 using SchoolProject.Infrustructure.Abstracts;
 using SchoolProject.Service.Abstracts;
@@ -9,10 +10,12 @@ namespace SchoolProject.Service.Implementation
     public class UserService : IUserService
     {
         private readonly IUserRepository _userRepository;
+        private readonly UserManager<User> _userManager;
 
-        public UserService(IUserRepository userRepository)
+        public UserService(IUserRepository userRepository, UserManager<User> userManager)
         {
             _userRepository = userRepository;
+            _userManager = userManager;
         }
 
         public int GetCount()

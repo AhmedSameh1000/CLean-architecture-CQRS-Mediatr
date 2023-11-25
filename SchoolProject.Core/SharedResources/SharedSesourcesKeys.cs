@@ -26,5 +26,6 @@
         public const string Updated = "Updated";
         public const string IsSameEmail = "IsSameEmail";
         public const string IsSameUserName = "IsSameUserName";
+        public const string PasswordIsUnCorrect = "PasswordIsUnCorrect";
     }
 }

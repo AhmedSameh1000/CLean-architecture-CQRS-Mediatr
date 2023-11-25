@@ -31,6 +31,7 @@
             public const string GetById = $"{Rule}/Users/{Id}";
             public const string Updateuser = $"{Rule}/Users/Update";
             public const string DeleteUser = $"{Rule}/Users/Delete/{Id}";
+            public const string ChangePassword = $"{Rule}/Users/ChangePassword";
         }
     }
 }

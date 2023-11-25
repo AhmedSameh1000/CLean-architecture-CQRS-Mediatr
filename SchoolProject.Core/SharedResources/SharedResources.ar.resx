@@ -171,6 +171,9 @@
   <data name="Password" xml:space="preserve">
     <value>كلمه المرور</value>
   </data>
+  <data name="PasswordIsUnCorrect" xml:space="preserve">
+    <value>كلمه المرور غير صحيحه</value>
+  </data>
   <data name="Phone" xml:space="preserve">
     <value>رقم الهاتف</value>
   </data>
