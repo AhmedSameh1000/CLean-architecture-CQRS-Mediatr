@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.DependencyInjection;
+﻿using JWTApi.Services;
+using Microsoft.Extensions.DependencyInjection;
 using SchoolProject.Service.Abstracts;
 using SchoolProject.Service.Implementation;
 
@@ -11,6 +12,7 @@ namespace SchoolProject.Service
             services.AddScoped<IStudentService, StudentServices>();
             services.AddScoped<IDepartmentService, DepartmentService>();
             services.AddScoped<IUserService, UserService>();
+            services.AddScoped<IAuthService, AuthService>();
 
             return services;
         }

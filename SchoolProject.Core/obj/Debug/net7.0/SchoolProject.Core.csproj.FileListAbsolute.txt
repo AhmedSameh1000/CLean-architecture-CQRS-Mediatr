@@ -24,3 +24,29 @@ C:\Users\Administrator\Desktop\Clean Architecture\SchoolProject\SchoolProject.Co
 C:\Users\Administrator\Desktop\Clean Architecture\SchoolProject\SchoolProject.Core\obj\Debug\net7.0\SchoolProject.Core.csproj.GenerateResource.cache
 C:\Users\Administrator\Desktop\Clean Architecture\SchoolProject\SchoolProject.Core\obj\Debug\net7.0\Ar\SchoolProject.Core.resources.dll
 C:\Users\Administrator\Desktop\Clean Architecture\SchoolProject\SchoolProject.Core\obj\Debug\net7.0\En\SchoolProject.Core.resources.dll
+C:\Users\Administrator\Desktop\CurrentProject\CLean-architecture-CQRS-Mediatr\SchoolProject.Core\bin\Debug\net7.0\SchoolProject.Core.deps.json
+C:\Users\Administrator\Desktop\CurrentProject\CLean-architecture-CQRS-Mediatr\SchoolProject.Core\bin\Debug\net7.0\SchoolProject.Core.dll
+C:\Users\Administrator\Desktop\CurrentProject\CLean-architecture-CQRS-Mediatr\SchoolProject.Core\bin\Debug\net7.0\SchoolProject.Core.pdb
+C:\Users\Administrator\Desktop\CurrentProject\CLean-architecture-CQRS-Mediatr\SchoolProject.Core\bin\Debug\net7.0\ar\SchoolProject.Core.resources.dll
+C:\Users\Administrator\Desktop\CurrentProject\CLean-architecture-CQRS-Mediatr\SchoolProject.Core\bin\Debug\net7.0\en\SchoolProject.Core.resources.dll
+C:\Users\Administrator\Desktop\CurrentProject\CLean-architecture-CQRS-Mediatr\SchoolProject.Core\bin\Debug\net7.0\SchoolProject.Data.dll
+C:\Users\Administrator\Desktop\CurrentProject\CLean-architecture-CQRS-Mediatr\SchoolProject.Core\bin\Debug\net7.0\SchoolProject.Infrustructure.dll
+C:\Users\Administrator\Desktop\CurrentProject\CLean-architecture-CQRS-Mediatr\SchoolProject.Core\bin\Debug\net7.0\SchoolProject.Service.dll
+C:\Users\Administrator\Desktop\CurrentProject\CLean-architecture-CQRS-Mediatr\SchoolProject.Core\bin\Debug\net7.0\SchoolProject.Data.pdb
+C:\Users\Administrator\Desktop\CurrentProject\CLean-architecture-CQRS-Mediatr\SchoolProject.Core\bin\Debug\net7.0\SchoolProject.Infrustructure.pdb
+C:\Users\Administrator\Desktop\CurrentProject\CLean-architecture-CQRS-Mediatr\SchoolProject.Core\bin\Debug\net7.0\SchoolProject.Service.pdb
+C:\Users\Administrator\Desktop\CurrentProject\CLean-architecture-CQRS-Mediatr\SchoolProject.Core\obj\Debug\net7.0\SchoolProject.Core.csproj.AssemblyReference.cache
+C:\Users\Administrator\Desktop\CurrentProject\CLean-architecture-CQRS-Mediatr\SchoolProject.Core\obj\Debug\net7.0\SchoolProject.Core.Resources.SharedResources.ar.resources
+C:\Users\Administrator\Desktop\CurrentProject\CLean-architecture-CQRS-Mediatr\SchoolProject.Core\obj\Debug\net7.0\SchoolProject.Core.Resources.SharedResources.en.resources
+C:\Users\Administrator\Desktop\CurrentProject\CLean-architecture-CQRS-Mediatr\SchoolProject.Core\obj\Debug\net7.0\SchoolProject.Core.csproj.GenerateResource.cache
+C:\Users\Administrator\Desktop\CurrentProject\CLean-architecture-CQRS-Mediatr\SchoolProject.Core\obj\Debug\net7.0\SchoolProject.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Administrator\Desktop\CurrentProject\CLean-architecture-CQRS-Mediatr\SchoolProject.Core\obj\Debug\net7.0\SchoolProject.Core.AssemblyInfoInputs.cache
+C:\Users\Administrator\Desktop\CurrentProject\CLean-architecture-CQRS-Mediatr\SchoolProject.Core\obj\Debug\net7.0\SchoolProject.Core.AssemblyInfo.cs
+C:\Users\Administrator\Desktop\CurrentProject\CLean-architecture-CQRS-Mediatr\SchoolProject.Core\obj\Debug\net7.0\SchoolProject.Core.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\CurrentProject\CLean-architecture-CQRS-Mediatr\SchoolProject.Core\obj\Debug\net7.0\ar\SchoolProject.Core.resources.dll
+C:\Users\Administrator\Desktop\CurrentProject\CLean-architecture-CQRS-Mediatr\SchoolProject.Core\obj\Debug\net7.0\en\SchoolProject.Core.resources.dll
+C:\Users\Administrator\Desktop\CurrentProject\CLean-architecture-CQRS-Mediatr\SchoolProject.Core\obj\Debug\net7.0\SchoolProject.Core.csproj.CopyComplete
+C:\Users\Administrator\Desktop\CurrentProject\CLean-architecture-CQRS-Mediatr\SchoolProject.Core\obj\Debug\net7.0\SchoolProject.Core.dll
+C:\Users\Administrator\Desktop\CurrentProject\CLean-architecture-CQRS-Mediatr\SchoolProject.Core\obj\Debug\net7.0\refint\SchoolProject.Core.dll
+C:\Users\Administrator\Desktop\CurrentProject\CLean-architecture-CQRS-Mediatr\SchoolProject.Core\obj\Debug\net7.0\SchoolProject.Core.pdb
+C:\Users\Administrator\Desktop\CurrentProject\CLean-architecture-CQRS-Mediatr\SchoolProject.Core\obj\Debug\net7.0\ref\SchoolProject.Core.dll

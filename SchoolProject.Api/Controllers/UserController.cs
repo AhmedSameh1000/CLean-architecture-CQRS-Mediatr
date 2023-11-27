@@ -19,13 +19,6 @@ namespace SchoolProject.Api.Controllers
             _mediator = mediator;
         }
 
-        [HttpPost(RouterLinks.UserRouting.Register)]
-        public async Task<IActionResult> Register(AddUserDto addUserDto)
-        {
-            var Response = await _mediator.Send(new AddUserCommand { AddUserDto = addUserDto });
-            return NewResult(Response);
-        }
-
         [HttpGet(RouterLinks.UserRouting.GetAll)]
         public async Task<IActionResult> GetUsers([FromQuery] RequestParams requestParams)
         {

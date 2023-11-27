@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Administrator\\Desktop\\Clean Architecture\\SchoolProject\\SchoolProject.Core\\SchoolProject.Core.csproj": {}
+    "C:\\Users\\Administrator\\Desktop\\CurrentProject\\CLean-architecture-CQRS-Mediatr\\SchoolProject.Core\\SchoolProject.Core.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Administrator\\Desktop\\Clean Architecture\\SchoolProject\\SchoolProject.Core\\SchoolProject.Core.csproj": {
+    "C:\\Users\\Administrator\\Desktop\\CurrentProject\\CLean-architecture-CQRS-Mediatr\\SchoolProject.Core\\SchoolProject.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Administrator\\Desktop\\Clean Architecture\\SchoolProject\\SchoolProject.Core\\SchoolProject.Core.csproj",
+        "projectUniqueName": "C:\\Users\\Administrator\\Desktop\\CurrentProject\\CLean-architecture-CQRS-Mediatr\\SchoolProject.Core\\SchoolProject.Core.csproj",
         "projectName": "SchoolProject.Core",
-        "projectPath": "C:\\Users\\Administrator\\Desktop\\Clean Architecture\\SchoolProject\\SchoolProject.Core\\SchoolProject.Core.csproj",
+        "projectPath": "C:\\Users\\Administrator\\Desktop\\CurrentProject\\CLean-architecture-CQRS-Mediatr\\SchoolProject.Core\\SchoolProject.Core.csproj",
         "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Administrator\\Desktop\\Clean Architecture\\SchoolProject\\SchoolProject.Core\\obj\\",
+        "outputPath": "C:\\Users\\Administrator\\Desktop\\CurrentProject\\CLean-architecture-CQRS-Mediatr\\SchoolProject.Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,14 +28,14 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\Administrator\\Desktop\\Clean Architecture\\SchoolProject\\SchoolProject.Data\\SchoolProject.Data.csproj": {
-                "projectPath": "C:\\Users\\Administrator\\Desktop\\Clean Architecture\\SchoolProject\\SchoolProject.Data\\SchoolProject.Data.csproj"
+              "C:\\Users\\Administrator\\Desktop\\CurrentProject\\CLean-architecture-CQRS-Mediatr\\SchoolProject.Data\\SchoolProject.Data.csproj": {
+                "projectPath": "C:\\Users\\Administrator\\Desktop\\CurrentProject\\CLean-architecture-CQRS-Mediatr\\SchoolProject.Data\\SchoolProject.Data.csproj"
               },
-              "C:\\Users\\Administrator\\Desktop\\Clean Architecture\\SchoolProject\\SchoolProject.Infrustructure\\SchoolProject.Infrustructure.csproj": {
-                "projectPath": "C:\\Users\\Administrator\\Desktop\\Clean Architecture\\SchoolProject\\SchoolProject.Infrustructure\\SchoolProject.Infrustructure.csproj"
+              "C:\\Users\\Administrator\\Desktop\\CurrentProject\\CLean-architecture-CQRS-Mediatr\\SchoolProject.Infrustructure\\SchoolProject.Infrustructure.csproj": {
+                "projectPath": "C:\\Users\\Administrator\\Desktop\\CurrentProject\\CLean-architecture-CQRS-Mediatr\\SchoolProject.Infrustructure\\SchoolProject.Infrustructure.csproj"
               },
-              "C:\\Users\\Administrator\\Desktop\\Clean Architecture\\SchoolProject\\SchoolProject.Service\\SchoolProject.Service.csproj": {
-                "projectPath": "C:\\Users\\Administrator\\Desktop\\Clean Architecture\\SchoolProject\\SchoolProject.Service\\SchoolProject.Service.csproj"
+              "C:\\Users\\Administrator\\Desktop\\CurrentProject\\CLean-architecture-CQRS-Mediatr\\SchoolProject.Service\\SchoolProject.Service.csproj": {
+                "projectPath": "C:\\Users\\Administrator\\Desktop\\CurrentProject\\CLean-architecture-CQRS-Mediatr\\SchoolProject.Service\\SchoolProject.Service.csproj"
               }
             }
           }
@@ -95,14 +95,14 @@
         }
       }
     },
-    "C:\\Users\\Administrator\\Desktop\\Clean Architecture\\SchoolProject\\SchoolProject.Data\\SchoolProject.Data.csproj": {
+    "C:\\Users\\Administrator\\Desktop\\CurrentProject\\CLean-architecture-CQRS-Mediatr\\SchoolProject.Data\\SchoolProject.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Administrator\\Desktop\\Clean Architecture\\SchoolProject\\SchoolProject.Data\\SchoolProject.Data.csproj",
+        "projectUniqueName": "C:\\Users\\Administrator\\Desktop\\CurrentProject\\CLean-architecture-CQRS-Mediatr\\SchoolProject.Data\\SchoolProject.Data.csproj",
         "projectName": "SchoolProject.Data",
-        "projectPath": "C:\\Users\\Administrator\\Desktop\\Clean Architecture\\SchoolProject\\SchoolProject.Data\\SchoolProject.Data.csproj",
+        "projectPath": "C:\\Users\\Administrator\\Desktop\\CurrentProject\\CLean-architecture-CQRS-Mediatr\\SchoolProject.Data\\SchoolProject.Data.csproj",
         "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Administrator\\Desktop\\Clean Architecture\\SchoolProject\\SchoolProject.Data\\obj\\",
+        "outputPath": "C:\\Users\\Administrator\\Desktop\\CurrentProject\\CLean-architecture-CQRS-Mediatr\\SchoolProject.Data\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -156,14 +156,14 @@
         }
       }
     },
-    "C:\\Users\\Administrator\\Desktop\\Clean Architecture\\SchoolProject\\SchoolProject.Infrustructure\\SchoolProject.Infrustructure.csproj": {
+    "C:\\Users\\Administrator\\Desktop\\CurrentProject\\CLean-architecture-CQRS-Mediatr\\SchoolProject.Infrustructure\\SchoolProject.Infrustructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Administrator\\Desktop\\Clean Architecture\\SchoolProject\\SchoolProject.Infrustructure\\SchoolProject.Infrustructure.csproj",
+        "projectUniqueName": "C:\\Users\\Administrator\\Desktop\\CurrentProject\\CLean-architecture-CQRS-Mediatr\\SchoolProject.Infrustructure\\SchoolProject.Infrustructure.csproj",
         "projectName": "SchoolProject.Infrustructure",
-        "projectPath": "C:\\Users\\Administrator\\Desktop\\Clean Architecture\\SchoolProject\\SchoolProject.Infrustructure\\SchoolProject.Infrustructure.csproj",
+        "projectPath": "C:\\Users\\Administrator\\Desktop\\CurrentProject\\CLean-architecture-CQRS-Mediatr\\SchoolProject.Infrustructure\\SchoolProject.Infrustructure.csproj",
         "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Administrator\\Desktop\\Clean Architecture\\SchoolProject\\SchoolProject.Infrustructure\\obj\\",
+        "outputPath": "C:\\Users\\Administrator\\Desktop\\CurrentProject\\CLean-architecture-CQRS-Mediatr\\SchoolProject.Infrustructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -180,8 +180,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\Administrator\\Desktop\\Clean Architecture\\SchoolProject\\SchoolProject.Data\\SchoolProject.Data.csproj": {
-                "projectPath": "C:\\Users\\Administrator\\Desktop\\Clean Architecture\\SchoolProject\\SchoolProject.Data\\SchoolProject.Data.csproj"
+              "C:\\Users\\Administrator\\Desktop\\CurrentProject\\CLean-architecture-CQRS-Mediatr\\SchoolProject.Data\\SchoolProject.Data.csproj": {
+                "projectPath": "C:\\Users\\Administrator\\Desktop\\CurrentProject\\CLean-architecture-CQRS-Mediatr\\SchoolProject.Data\\SchoolProject.Data.csproj"
               }
             }
           }
@@ -196,6 +196,10 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[7.0.14, )"
+            },
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
               "version": "[7.0.14, )"
@@ -209,6 +213,14 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[7.0.14, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.5.0, )"
+            },
+            "Swashbuckle.AspNetCore.Annotations": {
+              "target": "Package",
+              "version": "[6.5.0, )"
             },
             "X.PagedList": {
               "target": "Package",
@@ -235,14 +247,14 @@
         }
       }
     },
-    "C:\\Users\\Administrator\\Desktop\\Clean Architecture\\SchoolProject\\SchoolProject.Service\\SchoolProject.Service.csproj": {
+    "C:\\Users\\Administrator\\Desktop\\CurrentProject\\CLean-architecture-CQRS-Mediatr\\SchoolProject.Service\\SchoolProject.Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Administrator\\Desktop\\Clean Architecture\\SchoolProject\\SchoolProject.Service\\SchoolProject.Service.csproj",
+        "projectUniqueName": "C:\\Users\\Administrator\\Desktop\\CurrentProject\\CLean-architecture-CQRS-Mediatr\\SchoolProject.Service\\SchoolProject.Service.csproj",
         "projectName": "SchoolProject.Service",
-        "projectPath": "C:\\Users\\Administrator\\Desktop\\Clean Architecture\\SchoolProject\\SchoolProject.Service\\SchoolProject.Service.csproj",
+        "projectPath": "C:\\Users\\Administrator\\Desktop\\CurrentProject\\CLean-architecture-CQRS-Mediatr\\SchoolProject.Service\\SchoolProject.Service.csproj",
         "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Administrator\\Desktop\\Clean Architecture\\SchoolProject\\SchoolProject.Service\\obj\\",
+        "outputPath": "C:\\Users\\Administrator\\Desktop\\CurrentProject\\CLean-architecture-CQRS-Mediatr\\SchoolProject.Service\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -259,11 +271,11 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\Administrator\\Desktop\\Clean Architecture\\SchoolProject\\SchoolProject.Data\\SchoolProject.Data.csproj": {
-                "projectPath": "C:\\Users\\Administrator\\Desktop\\Clean Architecture\\SchoolProject\\SchoolProject.Data\\SchoolProject.Data.csproj"
+              "C:\\Users\\Administrator\\Desktop\\CurrentProject\\CLean-architecture-CQRS-Mediatr\\SchoolProject.Data\\SchoolProject.Data.csproj": {
+                "projectPath": "C:\\Users\\Administrator\\Desktop\\CurrentProject\\CLean-architecture-CQRS-Mediatr\\SchoolProject.Data\\SchoolProject.Data.csproj"
               },
-              "C:\\Users\\Administrator\\Desktop\\Clean Architecture\\SchoolProject\\SchoolProject.Infrustructure\\SchoolProject.Infrustructure.csproj": {
-                "projectPath": "C:\\Users\\Administrator\\Desktop\\Clean Architecture\\SchoolProject\\SchoolProject.Infrustructure\\SchoolProject.Infrustructure.csproj"
+              "C:\\Users\\Administrator\\Desktop\\CurrentProject\\CLean-architecture-CQRS-Mediatr\\SchoolProject.Infrustructure\\SchoolProject.Infrustructure.csproj": {
+                "projectPath": "C:\\Users\\Administrator\\Desktop\\CurrentProject\\CLean-architecture-CQRS-Mediatr\\SchoolProject.Infrustructure\\SchoolProject.Infrustructure.csproj"
               }
             }
           }
@@ -277,6 +289,12 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[7.0.14, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

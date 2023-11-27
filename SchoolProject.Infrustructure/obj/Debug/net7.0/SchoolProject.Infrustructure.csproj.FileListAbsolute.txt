@@ -15,3 +15,20 @@ C:\Users\Administrator\Desktop\Clean Architecture\SchoolProject\SchoolProject.In
 C:\Users\Administrator\Desktop\Clean Architecture\SchoolProject\SchoolProject.Infrustructure\obj\Debug\net7.0\ref\SchoolProject.Infrustructure.dll
 C:\Users\Administrator\Desktop\Clean Architecture\SchoolProject\SchoolProject.Infrustructure\bin\Debug\net7.0\SchoolProject.Infrustructure.runtimeconfig.json
 C:\Users\Administrator\Desktop\Clean Architecture\SchoolProject\SchoolProject.Infrustructure\obj\Debug\net7.0\SchoolProject.Infrustructure.genruntimeconfig.cache
+C:\Users\Administrator\Desktop\CurrentProject\CLean-architecture-CQRS-Mediatr\SchoolProject.Infrustructure\bin\Debug\net7.0\SchoolProject.Infrustructure.deps.json
+C:\Users\Administrator\Desktop\CurrentProject\CLean-architecture-CQRS-Mediatr\SchoolProject.Infrustructure\bin\Debug\net7.0\SchoolProject.Infrustructure.runtimeconfig.json
+C:\Users\Administrator\Desktop\CurrentProject\CLean-architecture-CQRS-Mediatr\SchoolProject.Infrustructure\bin\Debug\net7.0\SchoolProject.Infrustructure.dll
+C:\Users\Administrator\Desktop\CurrentProject\CLean-architecture-CQRS-Mediatr\SchoolProject.Infrustructure\bin\Debug\net7.0\SchoolProject.Infrustructure.pdb
+C:\Users\Administrator\Desktop\CurrentProject\CLean-architecture-CQRS-Mediatr\SchoolProject.Infrustructure\bin\Debug\net7.0\SchoolProject.Data.dll
+C:\Users\Administrator\Desktop\CurrentProject\CLean-architecture-CQRS-Mediatr\SchoolProject.Infrustructure\bin\Debug\net7.0\SchoolProject.Data.pdb
+C:\Users\Administrator\Desktop\CurrentProject\CLean-architecture-CQRS-Mediatr\SchoolProject.Infrustructure\obj\Debug\net7.0\SchoolProject.Infrustructure.csproj.AssemblyReference.cache
+C:\Users\Administrator\Desktop\CurrentProject\CLean-architecture-CQRS-Mediatr\SchoolProject.Infrustructure\obj\Debug\net7.0\SchoolProject.Infrustructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Administrator\Desktop\CurrentProject\CLean-architecture-CQRS-Mediatr\SchoolProject.Infrustructure\obj\Debug\net7.0\SchoolProject.Infrustructure.AssemblyInfoInputs.cache
+C:\Users\Administrator\Desktop\CurrentProject\CLean-architecture-CQRS-Mediatr\SchoolProject.Infrustructure\obj\Debug\net7.0\SchoolProject.Infrustructure.AssemblyInfo.cs
+C:\Users\Administrator\Desktop\CurrentProject\CLean-architecture-CQRS-Mediatr\SchoolProject.Infrustructure\obj\Debug\net7.0\SchoolProject.Infrustructure.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\CurrentProject\CLean-architecture-CQRS-Mediatr\SchoolProject.Infrustructure\obj\Debug\net7.0\SchoolProject.Infrustructure.csproj.CopyComplete
+C:\Users\Administrator\Desktop\CurrentProject\CLean-architecture-CQRS-Mediatr\SchoolProject.Infrustructure\obj\Debug\net7.0\SchoolProject.Infrustructure.dll
+C:\Users\Administrator\Desktop\CurrentProject\CLean-architecture-CQRS-Mediatr\SchoolProject.Infrustructure\obj\Debug\net7.0\refint\SchoolProject.Infrustructure.dll
+C:\Users\Administrator\Desktop\CurrentProject\CLean-architecture-CQRS-Mediatr\SchoolProject.Infrustructure\obj\Debug\net7.0\SchoolProject.Infrustructure.pdb
+C:\Users\Administrator\Desktop\CurrentProject\CLean-architecture-CQRS-Mediatr\SchoolProject.Infrustructure\obj\Debug\net7.0\SchoolProject.Infrustructure.genruntimeconfig.cache
+C:\Users\Administrator\Desktop\CurrentProject\CLean-architecture-CQRS-Mediatr\SchoolProject.Infrustructure\obj\Debug\net7.0\ref\SchoolProject.Infrustructure.dll

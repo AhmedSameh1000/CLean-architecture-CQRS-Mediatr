@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "uR7uk/q5xuUz2g7n8Jorjx9Scq6omqpscqIf2CotUfH65oah1DqhQl/9Qfx2sUKu3WTEA5yhs9Omo0RbMC2lyw==",
+  "dgSpecHash": "s074ri5sAeI3bSpQw+GvQkJyDpVoWh+LzdjZDpCVH3cnuLk/RlTDt7tFvhSjJa+FfMJJ0aoVFDkBis/4a6uSgw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Administrator\\Desktop\\Clean Architecture\\SchoolProject\\SchoolProject.Data\\SchoolProject.Data.csproj",
+  "projectFilePath": "C:\\Users\\Administrator\\Desktop\\CurrentProject\\CLean-architecture-CQRS-Mediatr\\SchoolProject.Data\\SchoolProject.Data.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\7.0.14\\microsoft.aspnetcore.cryptography.internal.7.0.14.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\7.0.14\\microsoft.aspnetcore.cryptography.keyderivation.7.0.14.nupkg.sha512",

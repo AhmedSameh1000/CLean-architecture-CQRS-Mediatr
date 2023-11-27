@@ -1,10 +1,8 @@
-using Microsoft.AspNetCore.Identity;
+using JWTApi.Data.Helpers;
 using Microsoft.AspNetCore.Localization;
 using Microsoft.Extensions.Options;
 using SchoolProject.Core;
-using SchoolProject.Data.Entities.Identity;
 using SchoolProject.Infrustructure;
-using SchoolProject.Infrustructure.Data;
 using SchoolProject.Service;
 using System.Globalization;
 
@@ -16,6 +14,7 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+builder.Services.Configure<JWT>(builder.Configuration.GetSection("JWT"));
 
 #region DependenciesInjection
 
@@ -24,18 +23,6 @@ builder.Services
     .AddInfrustructureDependencies()
     .AddServicesDependencies()
     .AddCoreDependencies();
-
-builder.Services.AddIdentity<User, IdentityRole<int>>(options =>
-{
-    options.Password.RequiredLength = 5;
-    options.Password.RequireDigit = false;
-    options.Password.RequireLowercase = false;
-    options.Password.RequireUppercase = false;
-    options.Password.RequireNonAlphanumeric = false; // Set this to true to require at least one non-alphanumeric character
-    options.SignIn.RequireConfirmedEmail = true;
-})
-.AddEntityFrameworkStores<AppDbContext>()
-.AddDefaultTokenProviders();
 
 #endregion DependenciesInjection
 

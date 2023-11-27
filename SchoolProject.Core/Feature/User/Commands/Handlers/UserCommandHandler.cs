@@ -14,7 +14,6 @@ using UserNameSpace = SchoolProject.Data.Entities.Identity;
 namespace SchoolProject.Core.Feature.User.Commands.Handlers
 {
     public class UserCommandHandler : ResponseHandler,
-        IRequestHandler<AddUserCommand, Response<string>>,
         IRequestHandler<UpdateUserCommand, Response<string>>,
         IRequestHandler<DeleteuserCommand, Response<string>>,
         IRequestHandler<ChangeUserpasswordCommand, Response<string>>
@@ -43,35 +42,6 @@ namespace SchoolProject.Core.Feature.User.Commands.Handlers
             _updateuserValidator = UpdateuserValidator;
             _changPasswordValidator = changPasswordValidator;
             _userService = userService;
-        }
-
-        public async Task<Response<string>> Handle(AddUserCommand request, CancellationToken cancellationToken)
-        {
-            var ValidationResult = await _userValidator.ValidateAsync(request.AddUserDto);
-
-            if (!ValidationResult.IsValid)
-            {
-                return BadRequest<string>(string.Join(",", ValidationResult.Errors.Select(c => c.ErrorMessage)));
-            }
-
-            var UserExistByEmail = await _userManager.FindByEmailAsync(request.AddUserDto.Email);
-            if (UserExistByEmail is not null)
-                return BadRequest<string>(_stringLocalizer[SharedSesourcesKeys.EmailIsAlreadyRegisterd]);
-
-            var UserExistByUserName = await _userManager.FindByNameAsync(request.AddUserDto.UserName);
-            if (UserExistByUserName is not null)
-                return BadRequest<string>(_stringLocalizer[SharedSesourcesKeys.UserNameIsAlreadyRegisterd]);
-
-            var UserToRegister = _mapper.Map<UserNameSpace.User>(request.AddUserDto);
-
-            var Result = await _userManager.CreateAsync(UserToRegister, request.AddUserDto.Password);
-
-            if (!Result.Succeeded)
-            {
-                return BadRequest<string>(string.Join(',', Result.Errors.Select(c => c.Description)));
-            }
-
-            return Created<string>(_stringLocalizer[SharedSesourcesKeys.LogInSuccess]);
         }
 
         public async Task<Response<string>> Handle(UpdateUserCommand request, CancellationToken cancellationToken)

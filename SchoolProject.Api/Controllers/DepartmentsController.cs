@@ -1,4 +1,5 @@
 ﻿using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using SchoolProject.Api.Base;
 using SchoolProject.Core.Feature.Departments.Queries.Models;
@@ -15,7 +16,7 @@ namespace SchoolProject.Api.Controllers
         {
             _mediator = mediator;
         }
-
+        [Authorize]
         [HttpGet(RouterLinks.DepartmentRouting.Departments)]
         public async Task<IActionResult> GetById([FromRoute] int Id)
         {

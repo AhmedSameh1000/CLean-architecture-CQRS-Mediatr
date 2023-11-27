@@ -7,6 +7,15 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Feature\Departments\CommandsValidator\**" />
+    <Compile Remove="Feature\Departments\Commands\**" />
+    <EmbeddedResource Remove="Feature\Departments\CommandsValidator\**" />
+    <EmbeddedResource Remove="Feature\Departments\Commands\**" />
+    <None Remove="Feature\Departments\CommandsValidator\**" />
+    <None Remove="Feature\Departments\Commands\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\SchoolProject.Data\SchoolProject.Data.csproj" />
     <ProjectReference Include="..\SchoolProject.Infrustructure\SchoolProject.Infrustructure.csproj" />
     <ProjectReference Include="..\SchoolProject.Service\SchoolProject.Service.csproj" />
@@ -31,8 +40,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Feature\Departments\Commands\" />
-    <Folder Include="Feature\Departments\CommandsValidator\" />
+    <Folder Include="Feature\Authentication\CommonValidator\" />
+    <Folder Include="Feature\Authentication\Queries\" />
   </ItemGroup>
 
 </Project>
