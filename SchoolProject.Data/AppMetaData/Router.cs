@@ -33,10 +33,7 @@
             public const string Updateuser = $"{Rule}/Users/Update";
             public const string DeleteUser = $"{Rule}/Users/Delete/{Id}";
             public const string ChangePassword = $"{Rule}/Users/ChangePassword";
-        }
-
-        public static class Auth
-        {
+            public const string CreateRole = $"{Rule}/Roles/CreateRole";
         }
     }
 }

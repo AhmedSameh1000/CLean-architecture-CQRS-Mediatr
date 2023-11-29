@@ -138,6 +138,9 @@
   <data name="Done" xml:space="preserve">
     <value>تم بنجاح</value>
   </data>
+  <data name="DuplicateRoleName" xml:space="preserve">
+    <value>لا يمكن تكرار اسم القواعد</value>
+  </data>
   <data name="Email" xml:space="preserve">
     <value>البريد الالكتروني</value>
   </data>

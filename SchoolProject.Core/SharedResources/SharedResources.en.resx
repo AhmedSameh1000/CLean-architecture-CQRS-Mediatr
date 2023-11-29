@@ -138,6 +138,9 @@
   <data name="Done" xml:space="preserve">
     <value>Success</value>
   </data>
+  <data name="DuplicateRoleName" xml:space="preserve">
+    <value>Cant Add Duplicate Role Name</value>
+  </data>
   <data name="Email" xml:space="preserve">
     <value>Email</value>
   </data>

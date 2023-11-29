@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "t4YtYCxclm7V8JaRHd+hyAJnIMCUo1kslq41Z2bGKF94JnRqrbkEzMJAtOazlJ2VFwX2Gzeo+k6doKtddoxlKw==",
+  "dgSpecHash": "A64ZzuQ3r/wCHG15iQgKV4m/FKkYEGWn+VcxfTKmvnjro6ws80Slq74RXg4jcMD2lRXUaImkErnaDWxxsvpDcQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Administrator\\Desktop\\CurrentProject\\CLean-architecture-CQRS-Mediatr\\SchoolProject.Service\\SchoolProject.Service.csproj",
+  "projectFilePath": "C:\\Users\\Administrator\\Desktop\\New\\CLean-architecture-CQRS-Mediatr\\SchoolProject.Service\\SchoolProject.Service.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Administrator\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",

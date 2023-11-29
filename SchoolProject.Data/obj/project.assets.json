@@ -773,11 +773,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Administrator\\Desktop\\CurrentProject\\CLean-architecture-CQRS-Mediatr\\SchoolProject.Data\\SchoolProject.Data.csproj",
+      "projectUniqueName": "C:\\Users\\Administrator\\Desktop\\New\\CLean-architecture-CQRS-Mediatr\\SchoolProject.Data\\SchoolProject.Data.csproj",
       "projectName": "SchoolProject.Data",
-      "projectPath": "C:\\Users\\Administrator\\Desktop\\CurrentProject\\CLean-architecture-CQRS-Mediatr\\SchoolProject.Data\\SchoolProject.Data.csproj",
+      "projectPath": "C:\\Users\\Administrator\\Desktop\\New\\CLean-architecture-CQRS-Mediatr\\SchoolProject.Data\\SchoolProject.Data.csproj",
       "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Administrator\\Desktop\\CurrentProject\\CLean-architecture-CQRS-Mediatr\\SchoolProject.Data\\obj\\",
+      "outputPath": "C:\\Users\\Administrator\\Desktop\\New\\CLean-architecture-CQRS-Mediatr\\SchoolProject.Data\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",

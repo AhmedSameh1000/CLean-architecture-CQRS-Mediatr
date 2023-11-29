@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "fsMEdTBbgxilKk9MMzLRBd+A2CXHpRd19RpGHkPKNsrbrjGl5K6MeChCp+eIZ12esEKKZREYHlb9Gf7Dd5nkQQ==",
+  "dgSpecHash": "7xdkJn4i/zk5WQczri6eCqLU8J4hnmhaelbturJ/6qesAwtcUipAi+Fe9T6PHSp3dW2ILWPuReL7BTytUtuveA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Administrator\\Desktop\\CurrentProject\\CLean-architecture-CQRS-Mediatr\\SchoolProject.Core\\SchoolProject.Core.csproj",
+  "projectFilePath": "C:\\Users\\Administrator\\Desktop\\New\\CLean-architecture-CQRS-Mediatr\\SchoolProject.Core\\SchoolProject.Core.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Administrator\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",

@@ -22,3 +22,15 @@ C:\Users\Administrator\Desktop\CurrentProject\CLean-architecture-CQRS-Mediatr\Sc
 C:\Users\Administrator\Desktop\CurrentProject\CLean-architecture-CQRS-Mediatr\SchoolProject.Data\obj\Debug\net7.0\refint\SchoolProject.Data.dll
 C:\Users\Administrator\Desktop\CurrentProject\CLean-architecture-CQRS-Mediatr\SchoolProject.Data\obj\Debug\net7.0\SchoolProject.Data.pdb
 C:\Users\Administrator\Desktop\CurrentProject\CLean-architecture-CQRS-Mediatr\SchoolProject.Data\obj\Debug\net7.0\ref\SchoolProject.Data.dll
+C:\Users\Administrator\Desktop\New\CLean-architecture-CQRS-Mediatr\SchoolProject.Data\bin\Debug\net7.0\SchoolProject.Data.deps.json
+C:\Users\Administrator\Desktop\New\CLean-architecture-CQRS-Mediatr\SchoolProject.Data\bin\Debug\net7.0\SchoolProject.Data.dll
+C:\Users\Administrator\Desktop\New\CLean-architecture-CQRS-Mediatr\SchoolProject.Data\bin\Debug\net7.0\SchoolProject.Data.pdb
+C:\Users\Administrator\Desktop\New\CLean-architecture-CQRS-Mediatr\SchoolProject.Data\obj\Debug\net7.0\SchoolProject.Data.csproj.AssemblyReference.cache
+C:\Users\Administrator\Desktop\New\CLean-architecture-CQRS-Mediatr\SchoolProject.Data\obj\Debug\net7.0\SchoolProject.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Administrator\Desktop\New\CLean-architecture-CQRS-Mediatr\SchoolProject.Data\obj\Debug\net7.0\SchoolProject.Data.AssemblyInfoInputs.cache
+C:\Users\Administrator\Desktop\New\CLean-architecture-CQRS-Mediatr\SchoolProject.Data\obj\Debug\net7.0\SchoolProject.Data.AssemblyInfo.cs
+C:\Users\Administrator\Desktop\New\CLean-architecture-CQRS-Mediatr\SchoolProject.Data\obj\Debug\net7.0\SchoolProject.Data.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\New\CLean-architecture-CQRS-Mediatr\SchoolProject.Data\obj\Debug\net7.0\SchoolProject.Data.dll
+C:\Users\Administrator\Desktop\New\CLean-architecture-CQRS-Mediatr\SchoolProject.Data\obj\Debug\net7.0\refint\SchoolProject.Data.dll
+C:\Users\Administrator\Desktop\New\CLean-architecture-CQRS-Mediatr\SchoolProject.Data\obj\Debug\net7.0\SchoolProject.Data.pdb
+C:\Users\Administrator\Desktop\New\CLean-architecture-CQRS-Mediatr\SchoolProject.Data\obj\Debug\net7.0\ref\SchoolProject.Data.dll

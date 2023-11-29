@@ -66,8 +66,15 @@ app.UseRequestLocalization(options.Value);
 
 app.UseHttpsRedirection();
 
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();
 
 app.Run();
+
+/*
+
+ System.AggregateException: 'Some services are not able to be constructed (Error while validating the service descriptor 'ServiceType: MediatR.IRequestHandler`2[SchoolProject.Core.Feature.Authorization.Commands.Models.AddRoleCommand,SchoolProject.Core.Bases.Response`1[System.String]] Lifetime: Transient ImplementationType: SchoolProject.Core.Feature.Authorization.Commands.Handlers.RoleCommandHandler': Unable to resolve service for type 'Microsoft.Extensions.Localization.StringLocalizer`1[SchoolProject.Core.Resources.SharedResources]' while attempting to activate 'SchoolProject.Core.Feature.Authorization.Commands.Validator.RoleValidators'.) (Error while validating the service descriptor 'ServiceType: FluentValidation.IValidator`1[SchoolProject.Core.Feature.Authorization.CommonValidator.CommonRoleValidator.IRolePropertiesValidation] Lifetime: Scoped ImplementationType: SchoolProject.Core.Feature.Authorization.CommonValidator.CommonRoleValidator.RolePropertiesValidation': Unable to resolve service for type 'Microsoft.Extensions.Localization.StringLocalizer`1[SchoolProject.Core.Resources.SharedResources]' while attempting to activate 'SchoolProject.Core.Feature.Authorization.CommonValidator.CommonRoleValidator.RolePropertiesValidation'.) (Error while validating the service descriptor 'ServiceType: SchoolProject.Core.Feature.Authorization.CommonValidator.CommonRoleValidator.RolePropertiesValidation Lifetime: Scoped ImplementationType: SchoolProject.Core.Feature.Authorization.CommonValidator.CommonRoleValidator.RolePropertiesValidation': Unable to resolve service for type 'Microsoft.Extensions.Localization.StringLocalizer`1[SchoolProject.Core.Resources.SharedResources]' while attempting to activate 'SchoolProject.Core.Feature.Authorization.CommonValidator.CommonRoleValidator.RolePropertiesValidation'.) (Error while validating the service descriptor 'ServiceType: FluentValidation.IValidator`1[SchoolProject.Core.Feature.Authorization.DTOs.AddRoleDto] Lifetime: Scoped ImplementationType: SchoolProject.Core.Feature.Authorization.Commands.Validator.RoleValidators': Unable to resolve service for type 'Microsoft.Extensions.Localization.StringLocalizer`1[SchoolProject.Core.Resources.SharedResources]' while attempting to activate 'SchoolProject.Core.Feature.Authorization.Commands.Validator.RoleValidators'.) (Error while validating the service descriptor 'ServiceType: SchoolProject.Core.Feature.Authorization.Commands.Validator.RoleValidators Lifetime: Scoped ImplementationType: SchoolProject.Core.Feature.Authorization.Commands.Validator.RoleValidators': Unable to resolve service for type 'Microsoft.Extensions.Localization.StringLocalizer`1[SchoolProject.Core.Resources.SharedResources]' while attempting to activate 'SchoolProject.Core.Feature.Authorization.Commands.Validator.RoleValidators'.)'
+
+ */
