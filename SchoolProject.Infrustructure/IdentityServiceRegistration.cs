@@ -17,12 +17,14 @@ namespace SchoolProject.Infrustructure
     {
         public static IServiceCollection ServiceRegistration(this IServiceCollection services, IConfiguration configuration)
         {
+            services.Configure<JWT>(configuration.GetSection("JWT"));
+
             services.AddDbContext<AppDbContext>(options =>
             {
                 options.UseSqlServer(configuration.GetConnectionString("ConStr"));
             });
 
-            services.AddIdentity<User, IdentityRole<int>>(options =>
+            services.AddIdentity<User, IdentityRole>(options =>
             {
                 options.Password.RequiredLength = 5;
                 options.Password.RequireDigit = false;
@@ -31,9 +33,7 @@ namespace SchoolProject.Infrustructure
                 options.Password.RequireNonAlphanumeric = false; // Set this to true to require at least one non-alphanumeric character
                 options.SignIn.RequireConfirmedEmail = true;
             })
-            .AddEntityFrameworkStores<AppDbContext>()
-            .AddDefaultTokenProviders();
-
+            .AddEntityFrameworkStores<AppDbContext>();
             var serviceProvider = services.BuildServiceProvider();
             var jwtSettings = serviceProvider.GetRequiredService<IOptions<JWT>>().Value;
 

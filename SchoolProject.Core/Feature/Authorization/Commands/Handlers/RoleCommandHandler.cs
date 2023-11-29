@@ -13,12 +13,12 @@ namespace SchoolProject.Core.Feature.Authorization.Commands.Handlers
     {
         private readonly IStringLocalizer<SharedResources> _stringLocalizer;
         private readonly IValidator<AddRoleDto> _rolevalidator;
-        private readonly RoleManager<IdentityRole<int>> _roleManager;
+        private readonly RoleManager<IdentityRole> _roleManager;
 
         public RoleCommandHandler(
             IStringLocalizer<SharedResources> stringLocalizer
             , IValidator<AddRoleDto> Rolevalidator,
-            RoleManager<IdentityRole<int>> roleManager
+            RoleManager<IdentityRole> roleManager
             ) : base(stringLocalizer)
 
         {
@@ -34,7 +34,7 @@ namespace SchoolProject.Core.Feature.Authorization.Commands.Handlers
             {
                 return BadRequest<string>(string.Join(",", ValidationResult.Errors.Select(c => c.ErrorMessage)));
             }
-            var result = await _roleManager.CreateAsync(new IdentityRole<int>() { Name = request.AddRoleDto.Name });
+            var result = await _roleManager.CreateAsync(new IdentityRole() { Name = request.AddRoleDto.Name });
 
             if (result.Succeeded)
             {

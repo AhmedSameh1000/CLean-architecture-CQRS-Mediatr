@@ -89,7 +89,6 @@ namespace JWTApi.Services
 
         private async Task<JwtSecurityToken> CreateJwtToken(User user)
         {
-            var userClaims = await _userManager.GetClaimsAsync(user);
             var roles = await _userManager.GetRolesAsync(user);
             var roleClaims = new List<Claim>();
 
@@ -103,7 +102,6 @@ namespace JWTApi.Services
                 new Claim(ClaimTypes.Email, user.Email),
                 new Claim(ClaimTypes.GivenName, user.FullName),
             }
-            .Union(userClaims)
             .Union(roleClaims);
 
             var symmetricSecurityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_jwt.Key));

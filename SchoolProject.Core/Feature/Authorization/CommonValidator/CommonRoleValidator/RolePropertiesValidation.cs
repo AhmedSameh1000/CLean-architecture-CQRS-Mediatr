@@ -9,11 +9,11 @@ namespace SchoolProject.Core.Feature.Authorization.CommonValidator.CommonRoleVal
     public class RolePropertiesValidation : AbstractValidator<IRolePropertiesValidation>
     {
         private readonly IStringLocalizer<SharedResources> _stringLocalizer;
-        private readonly RoleManager<IdentityRole<int>> _roleManager;
+        private readonly RoleManager<IdentityRole> _roleManager;
 
         public RolePropertiesValidation(
 
-            IStringLocalizer<SharedResources> stringLocalizer, RoleManager<IdentityRole<int>> roleManager)
+            IStringLocalizer<SharedResources> stringLocalizer, RoleManager<IdentityRole> roleManager)
         {
             _stringLocalizer = stringLocalizer;
             _roleManager = roleManager;

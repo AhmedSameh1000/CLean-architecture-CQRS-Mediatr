@@ -68,6 +68,8 @@ namespace SchoolProject.Core.Feature.Authentication.Commands.Handlers
                 return BadRequest<string>(string.Join(',', Result.Errors.Select(c => c.Description)));
             }
 
+            await _userManager.AddToRoleAsync(UserToRegister, "User");
+
             return Created<string>(_stringLocalizer[SharedSesourcesKeys.Done]);
         }
 

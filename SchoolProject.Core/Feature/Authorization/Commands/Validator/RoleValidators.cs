@@ -10,9 +10,9 @@ namespace SchoolProject.Core.Feature.Authorization.Commands.Validator
     public class RoleValidators : AbstractValidator<AddRoleDto>
     {
         private readonly IStringLocalizer<SharedResources> _stringLocalizer;
-        private readonly RoleManager<IdentityRole<int>> _roleManager;
+        private readonly RoleManager<IdentityRole> _roleManager;
 
-        public RoleValidators(IStringLocalizer<SharedResources> stringLocalizer, RoleManager<IdentityRole<int>> roleManager)
+        public RoleValidators(IStringLocalizer<SharedResources> stringLocalizer, RoleManager<IdentityRole> roleManager)
         {
             _stringLocalizer = stringLocalizer;
             _roleManager = roleManager;

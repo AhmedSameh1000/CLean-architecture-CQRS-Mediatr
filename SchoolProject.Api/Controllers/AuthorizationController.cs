@@ -1,4 +1,5 @@
 ﻿using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using SchoolProject.Api.Base;
 using SchoolProject.Core.Feature.Authorization.Commands.Models;
@@ -7,6 +8,7 @@ using SchoolProject.Data.AppMetaData;
 
 namespace SchoolProject.Api.Controllers
 {
+    [Authorize(Roles = "Admin")]
     [ApiController]
     public class AuthorizationController : AppControllerBase
     {
