@@ -123,6 +123,9 @@
   <data name="BadRequest" xml:space="preserve">
     <value>Bad Request</value>
   </data>
+  <data name="ConfirmEmail" xml:space="preserve">
+    <value>Please Confirm Your Email</value>
+  </data>
   <data name="ConfirmPassword" xml:space="preserve">
     <value>Must Confirm Password</value>
   </data>
@@ -182,6 +185,9 @@
   </data>
   <data name="Required" xml:space="preserve">
     <value>This Field Required</value>
+  </data>
+  <data name="TryAgainLater" xml:space="preserve">
+    <value>Try Again Later</value>
   </data>
   <data name="UnAuthrize" xml:space="preserve">
     <value>Un Authrize</value>

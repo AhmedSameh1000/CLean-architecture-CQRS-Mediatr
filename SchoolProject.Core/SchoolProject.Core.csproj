@@ -41,8 +41,8 @@
 
   <ItemGroup>
     <Folder Include="Feature\Authentication\CommonValidator\" />
-    <Folder Include="Feature\Authentication\Queries\" />
     <Folder Include="Feature\Authorization\Queries\" />
+    <Folder Include="Feature\Emails\Queries\" />
   </ItemGroup>
 
 </Project>

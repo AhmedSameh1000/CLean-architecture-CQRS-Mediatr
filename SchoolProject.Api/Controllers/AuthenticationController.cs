@@ -2,6 +2,8 @@
 using Microsoft.AspNetCore.Mvc;
 using SchoolProject.Api.Base;
 using SchoolProject.Core.Feature.Authentication.Commands.Models;
+using SchoolProject.Core.Feature.Authentication.DTOs;
+using SchoolProject.Core.Feature.Authentication.Queries.Models;
 using SchoolProject.Core.Feature.User.DTOs;
 using SchoolProject.Data.AppMetaData;
 using TestApiJWT.Models;
@@ -29,6 +31,13 @@ namespace SchoolProject.Api.Controllers
         public async Task<IActionResult> LogIn([FromBody] LogInModel model)
         {
             var Response = await _mediator.Send(new LogInCommand { model = model });
+            return NewResult(Response);
+        }
+
+        [HttpGet(RouterLinks.UserRouting.ConfirmEmail)]
+        public async Task<IActionResult> ConfirmEmail([FromQuery] ConfirmEmailDTO model)
+        {
+            var Response = await _mediator.Send(new ConfirmEmailQuery { ConfirmEmailDTO = model });
             return NewResult(Response);
         }
     }

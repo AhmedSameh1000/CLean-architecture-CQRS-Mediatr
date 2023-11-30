@@ -1,5 +1,8 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Localization;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Infrastructure;
+using Microsoft.AspNetCore.Mvc.Routing;
 using Microsoft.Extensions.Options;
 using RefreshToken.Seeding;
 using SchoolProject.Core;
@@ -48,6 +51,15 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+builder.Services.AddTransient<IUrlHelper>(c =>
+{
+    var Actioncontext = c.GetRequiredService<IActionContextAccessor>().ActionContext;
+    var factory = c.GetRequiredService<IUrlHelperFactory>();
+    return factory.GetUrlHelper(Actioncontext);
+});
+builder.Services.AddSingleton<IActionContextAccessor, ActionContextAccessor>();
+
 var app = builder.Build();
 
 using (var Scope = app.Services.CreateScope())

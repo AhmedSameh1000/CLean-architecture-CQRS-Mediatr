@@ -123,6 +123,9 @@
   <data name="BadRequest" xml:space="preserve">
     <value>حدثت مشكله</value>
   </data>
+  <data name="ConfirmEmail" xml:space="preserve">
+    <value>الرجاء تفعيل حسابك </value>
+  </data>
   <data name="ConfirmPassword" xml:space="preserve">
     <value>يجب تاكيد كلمه المرور</value>
   </data>
@@ -182,6 +185,9 @@
   </data>
   <data name="Required" xml:space="preserve">
     <value>هذا الحقل مطلوب </value>
+  </data>
+  <data name="TryAgainLater" xml:space="preserve">
+    <value>حاول مره اخري في وقت لاحق</value>
   </data>
   <data name="UnAuthrize" xml:space="preserve">
     <value>غير مسموح</value>

@@ -28,5 +28,7 @@
         public const string IsSameUserName = "IsSameUserName";
         public const string PasswordIsUnCorrect = "PasswordIsUnCorrect";
         public const string DuplicateRoleName = "DuplicateRoleName";
+        public const string ConfirmEmail = "ConfirmEmail";
+        public const string TryAgainLater = "TryAgainLater";
     }
 }

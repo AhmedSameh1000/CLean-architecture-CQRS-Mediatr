@@ -31,9 +31,11 @@ namespace SchoolProject.Infrustructure
                 options.Password.RequireLowercase = false;
                 options.Password.RequireUppercase = false;
                 options.Password.RequireNonAlphanumeric = false; // Set this to true to require at least one non-alphanumeric character
+                options.User.RequireUniqueEmail = true; // Set this to true to require at least one non-alphanumeric character
                 options.SignIn.RequireConfirmedEmail = true;
             })
-            .AddEntityFrameworkStores<AppDbContext>();
+            .AddEntityFrameworkStores<AppDbContext>()
+              .AddDefaultTokenProviders();
             var serviceProvider = services.BuildServiceProvider();
             var jwtSettings = serviceProvider.GetRequiredService<IOptions<JWT>>().Value;
 
