@@ -12,7 +12,7 @@ using SchoolProject.Infrustructure.Data;
 namespace SchoolProject.Infrustructure.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20231129225107_Init")]
+    [Migration("20231201020000_Init")]
     partial class Init
     {
         /// <inheritdoc />
@@ -212,6 +212,9 @@ namespace SchoolProject.Infrustructure.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("Address")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Code")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("ConcurrencyStamp")

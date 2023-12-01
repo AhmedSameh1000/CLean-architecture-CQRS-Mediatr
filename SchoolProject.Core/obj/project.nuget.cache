@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "DAK4bTajAjudca0N72giDwICIQhSkx9fz5RYfa6Tx5Xgjr0Gs7vZiO4LMQztnW8mmfIh5uRt6wLRbFcTLuffvw==",
+  "dgSpecHash": "jCxhQow3pujLoo6V/6RYCEAAKf5a5Xcrbshbvg3+fRh5WXG3WMAriLfvpUWpt3b8qjezYKKQ2N4qBYtNym1m5w==",
   "success": true,
   "projectFilePath": "C:\\Users\\Administrator\\Desktop\\New\\CLean-architecture-CQRS-Mediatr\\SchoolProject.Core\\SchoolProject.Core.csproj",
   "expectedPackageFiles": [
@@ -9,6 +9,7 @@
     "C:\\Users\\Administrator\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\bouncycastle.cryptography\\2.2.1\\bouncycastle.cryptography.2.2.1.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\entityframeworkcore.encryptcolumn\\6.0.8\\entityframeworkcore.encryptcolumn.6.0.8.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\fluentvalidation\\11.8.0\\fluentvalidation.11.8.0.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.8.0\\fluentvalidation.dependencyinjectionextensions.11.8.0.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\jetbrains.annotations\\2022.3.1\\jetbrains.annotations.2022.3.1.nupkg.sha512",

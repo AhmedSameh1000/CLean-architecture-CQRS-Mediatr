@@ -40,5 +40,27 @@ namespace SchoolProject.Api.Controllers
             var Response = await _mediator.Send(new ConfirmEmailQuery { ConfirmEmailDTO = model });
             return NewResult(Response);
         }
+
+        [HttpGet(RouterLinks.UserRouting.ResetPassword)]
+        public async Task<IActionResult> ResetPassword([FromQuery] ResetPasswordlDTO model)
+        {
+            var Response = await _mediator.Send(new ResetPasswordCommand { ResetPasswordlDTO = model });
+            return NewResult(Response);
+        }
+
+        [HttpGet(RouterLinks.UserRouting.SendCode)]
+        public async Task<IActionResult> SendCode([FromQuery] ResetPasswordCodeDTO model)
+        {
+            var Response = await _mediator.Send(new ResetPasswordCodeQuey { ResetCode = model });
+            return NewResult(Response);
+        }
+
+        [HttpGet(RouterLinks.UserRouting.ResetUserPassword)]
+        public async Task<IActionResult> ResetPassword([FromQuery] ResetPasswordDTO model)
+        {
+            var
+            Response = await _mediator.Send(new ResetUserPasswordCommand { ResetPasswordDTO = model });
+            return NewResult(Response);
+        }
     }
 }

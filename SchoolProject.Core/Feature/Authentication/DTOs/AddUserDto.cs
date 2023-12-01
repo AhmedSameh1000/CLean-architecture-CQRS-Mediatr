@@ -1,4 +1,4 @@
-﻿using SchoolProject.Core.Feature.User.CommonValidator.UserWithFullProperty;
+﻿using SchoolProject.Core.Feature.Authentication.CommonValidator.UserWithFullProperty;
 
 namespace SchoolProject.Core.Feature.User.DTOs
 {

@@ -1,12 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "L/YGk11mGzKAA53ZwpIvQl2cbRkIaQJrnHpBw+FVqifWsm17yrgzWr1aDevkfS8kFAwu+FIPsoultxq2KHmgMg==",
+  "dgSpecHash": "XuDdguGX3OtH2MjkI62G/T5XD/ioYBlC9LpcqLdB4G6xD4mlVGhCS0wOVxC6O4yO/Jif+eUxsaFR1XGDaDRTOw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Administrator\\Desktop\\New\\CLean-architecture-CQRS-Mediatr\\SchoolProject.Service\\SchoolProject.Service.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Administrator\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\bouncycastle.cryptography\\2.2.1\\bouncycastle.cryptography.2.2.1.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\entityframeworkcore.encryptcolumn\\6.0.8\\entityframeworkcore.encryptcolumn.6.0.8.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\jetbrains.annotations\\2022.3.1\\jetbrains.annotations.2022.3.1.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\mailkit\\4.3.0\\mailkit.4.3.0.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\7.0.14\\microsoft.aspnetcore.authentication.jwtbearer.7.0.14.nupkg.sha512",

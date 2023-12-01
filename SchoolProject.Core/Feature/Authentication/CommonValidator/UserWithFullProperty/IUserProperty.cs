@@ -1,4 +1,4 @@
-﻿namespace SchoolProject.Core.Feature.User.CommonValidator.UserWithFullProperty
+﻿namespace SchoolProject.Core.Feature.Authentication.CommonValidator.UserWithFullProperty
 {
     public interface IUserProperty
     {

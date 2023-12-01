@@ -2,7 +2,7 @@
 using Microsoft.Extensions.Localization;
 using SchoolProject.Core.Resources;
 
-namespace SchoolProject.Core.Feature.User.CommonValidator.UserWithFullProperty
+namespace SchoolProject.Core.Feature.Authentication.CommonValidator.UserWithFullProperty
 {
     public class UserValidator : AbstractValidator<IUserProperty>
     {

@@ -1,6 +1,6 @@
 ﻿using FluentValidation;
 using Microsoft.Extensions.Localization;
-using SchoolProject.Core.Feature.User.CommonValidator.UserWithFullProperty;
+using SchoolProject.Core.Feature.Authentication.CommonValidator.UserWithFullProperty;
 using SchoolProject.Core.Feature.User.DTOs;
 using SchoolProject.Core.Resources;
 

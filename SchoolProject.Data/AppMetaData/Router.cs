@@ -36,6 +36,9 @@
             public const string ChangePassword = $"{Rule}/Users/ChangePassword";
             public const string CreateRole = $"{Rule}/Roles/CreateRole";
             public const string SendEmails = $"{Rule}/Emails/SendEmail";
+            public const string ResetPassword = $"{Rule}/Users/ResetPassword";
+            public const string SendCode = $"{Rule}/Users/SendCode";
+            public const string ResetUserPassword = $"{Rule}/Users/ResetUserPassword";
         }
     }
 }

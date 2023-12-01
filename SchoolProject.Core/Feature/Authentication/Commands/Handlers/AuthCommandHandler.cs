@@ -9,6 +9,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Localization;
 using SchoolProject.Core.Bases;
 using SchoolProject.Core.Feature.Authentication.Commands.Models;
+using SchoolProject.Core.Feature.Authentication.DTOs;
 using SchoolProject.Core.Feature.User.DTOs;
 using SchoolProject.Core.Resources;
 using SchoolProject.Service.Abstracts;
@@ -19,13 +20,17 @@ namespace SchoolProject.Core.Feature.Authentication.Commands.Handlers
 {
     public class AuthCommandHandler : ResponseHandler,
         IRequestHandler<AddUserCommand, Response<string>>,
-        IRequestHandler<LogInCommand, Response<AuthModel>>
+        IRequestHandler<LogInCommand, Response<AuthModel>>,
+        IRequestHandler<ResetPasswordCommand, Response<string>>,
+        IRequestHandler<ResetUserPasswordCommand, Response<string>>
     {
         private readonly IStringLocalizer<SharedResources> _stringLocalizer;
         private readonly IMapper _mapper;
         private readonly UserManager<data.User> _userManager;
         private readonly IValidator<AddUserDto> _userValidator;
         private readonly IValidator<LogInModel> _logInvalidator;
+        private readonly IValidator<ResetPasswordDTO> _resetPasswordValidate;
+        private readonly IValidator<ResetPasswordlDTO> _resetPasswordValidator;
         private readonly IHttpContextAccessor _httpContextAccessor;
         private readonly IAuthService _authService;
         private readonly IEmailServices _emailServices;
@@ -37,6 +42,8 @@ namespace SchoolProject.Core.Feature.Authentication.Commands.Handlers
             UserManager<data.User> userManager,
             IValidator<AddUserDto> UserValidator,
             IValidator<LogInModel> LogInvalidator,
+            IValidator<ResetPasswordDTO> ResetPasswordValidate,
+            IValidator<ResetPasswordlDTO> ResetPasswordValidator,
             IHttpContextAccessor httpContextAccessor,
             IAuthService authService,
             IEmailServices emailServices, IUrlHelper urlHelper) : base(stringLocalizer)
@@ -46,6 +53,8 @@ namespace SchoolProject.Core.Feature.Authentication.Commands.Handlers
             _userManager = userManager;
             _userValidator = UserValidator;
             _logInvalidator = LogInvalidator;
+            _resetPasswordValidate = ResetPasswordValidate;
+            _resetPasswordValidator = ResetPasswordValidator;
             _httpContextAccessor = httpContextAccessor;
             _authService = authService;
             _emailServices = emailServices;
@@ -125,26 +134,66 @@ namespace SchoolProject.Core.Feature.Authentication.Commands.Handlers
             }
             return Success(result);
         }
+
+        public async Task<Response<string>> Handle(ResetPasswordCommand request, CancellationToken cancellationToken)
+        {
+            var ValidationResult = await _resetPasswordValidator.ValidateAsync(request.ResetPasswordlDTO);
+
+            if (!ValidationResult.IsValid)
+            {
+                return BadRequest<string>(string.Join(",", ValidationResult.Errors.Select(c => c.ErrorMessage)));
+            }
+
+            var User = await _userManager.FindByEmailAsync(request.ResetPasswordlDTO.Email);
+            if (User is null)
+            {
+                return NotFound<string>(_stringLocalizer[SharedSesourcesKeys.NotFound]);
+            }
+            Random Genrator = new Random();
+            string Code = Genrator.Next(0, 100000).ToString("D6");
+
+            User.Code = Code;
+            var UpdateResult = await _userManager.UpdateAsync(User);
+            if (!UpdateResult.Succeeded)
+            {
+                return BadRequest<string>(_stringLocalizer[SharedSesourcesKeys.BadRequest]);
+            }
+            var Res = await _emailServices.SendEmail(User.Email, $"your Reset Passsword Code : {Code}", "Reset Password");
+
+            if (Res)
+            {
+                return Success<string>(_stringLocalizer[SharedSesourcesKeys.Done]);
+            }
+            else
+            {
+                return BadRequest<string>(_stringLocalizer[SharedSesourcesKeys.TryAgainLater]);
+            }
+        }
+
+        public async Task<Response<string>> Handle(ResetUserPasswordCommand request, CancellationToken cancellationToken)
+        {
+            var ValidationResult = await _resetPasswordValidate.ValidateAsync(request.ResetPasswordDTO);
+
+            if (!ValidationResult.IsValid)
+            {
+                return BadRequest<string>(string.Join(",", ValidationResult.Errors.Select(c => c.ErrorMessage)));
+            }
+
+            var User = await _userManager.FindByEmailAsync(request.ResetPasswordDTO.Email);
+            if (User is null)
+            {
+                return NotFound<string>(_stringLocalizer[SharedSesourcesKeys.NotFound]);
+            }
+            var RemovePasswordResut = await _userManager.RemovePasswordAsync(User);
+
+            if (!RemovePasswordResut.Succeeded)
+            {
+                return BadRequest<string>(_stringLocalizer[SharedSesourcesKeys.BadRequest]);
+            }
+
+            await _userManager.AddPasswordAsync(User, request.ResetPasswordDTO.Password);
+
+            return Success<string>(_stringLocalizer[SharedSesourcesKeys.Done]);
+        }
     }
-}/*
-
-CfDJ8Flk1rAVURZJrImC7dZ0bGDgjJJmR0RX
-sqyhyZCZhoe2I7pWaqgKmEdJzGiQOV6u6w94c2asQ
-cuT3SlD/tLHQ8wh1zgol0aU2f5d6fts7rueTTgZI85
-Oc5tYR4f0W3U+8XeUCKrPMYNQo2jZOc8QYCj
-6PROBa0hyDatOch1H/20QQWsm9ma29FLESO4
-V39xgh+syk45YcenmcTrhHHOlYKIQB43LbI
-/bt06vTGsPIrfqKwkCJKOZ9YxYZhTCQ/1i5Q==
-
-  */
-
-/*
-
-CfDJ8Flk1rAVURZJrImC7dZ0bGDgjJJmR0RX
-sqyhyZCZhoe2I7pWaqgKmEdJzGiQOV6u6w94c2asQ
-cuT3SlD/tLHQ8wh1zgol0aU2f5d6fts7rueTTgZI85
-Oc5tYR4f0W3U+8XeUCKrPMYNQo2jZOc8QYCj
-6PROBa0hyDatOch1H/20QQWsm9ma29FLESO4
-V39xgh+syk45YcenmcTrhHHOlYKIQB43LbI
-/bt06vTGsPIrfqKwkCJKOZ9YxYZhTCQ/1i5Q==
- */
+}

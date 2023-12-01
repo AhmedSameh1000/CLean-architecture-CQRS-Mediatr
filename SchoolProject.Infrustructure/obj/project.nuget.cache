@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "HG2GEqADFkCrHAZ/C+UCmtQmQX6PbgAdB38UwDRv9FIFq/D5Vw0+rolp5mKsrs8IBy9bNVCrK9meQk7K7cGdeg==",
+  "dgSpecHash": "obEHYDQ28a9QL9/wFVJfXzaOMQ18FXjGrvZDnzPYGbN+XdOS0C6mfqPIM6hDL28tYCZ/E4OaGcHxZxaB+VHtvA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Administrator\\Desktop\\New\\CLean-architecture-CQRS-Mediatr\\SchoolProject.Infrustructure\\SchoolProject.Infrustructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Administrator\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\entityframeworkcore.encryptcolumn\\6.0.8\\entityframeworkcore.encryptcolumn.6.0.8.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\jetbrains.annotations\\2022.3.1\\jetbrains.annotations.2022.3.1.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\7.0.14\\microsoft.aspnetcore.authentication.jwtbearer.7.0.14.nupkg.sha512",
